@@ -64,6 +64,9 @@ def filter_promoters_by_distance(promoters):
         return promoters.loc[[top_promoter_index]]
 
 def filter_expressed_df(expressed_tsscounts, outdir):
+    # if file exists, delete existing file
+    if os.path.exists(os.path.join(outdir, "expressed_genelist.txt")):
+        os.system("rm {}".format(os.path.join(outdir, "expressed_genelist.txt")))
     gene_tss_df = None
     unique_expressed_tsscounts = expressed_tsscounts.drop_duplicates()
     unique_expressed_tsscounts  = unique_expressed_tsscounts.sort_values(by=['PromoterActivityQuantile'], ascending=False) 
@@ -106,7 +109,6 @@ def process_genome_tss(args):
     filebase = str(os.path.basename(args.tss_file)).split(".")[0]
     features = {}
     if args.h3k27ac:
-        print("here")
         features['H3K27ac'] = args.h3k27ac.split(",")
     features[args.default_accessibility] = args.dhs.split(",")
     tss_df = read_tss_file(args.tss_file)
@@ -122,8 +124,8 @@ def process_genome_tss(args):
         print("Taking in isoform TSS file and generating Counts")
         for feature_bam in feature_bam_list:
             # Take in isoform file and count reads 
-            tss_df_1 = count_single_feature_for_bed(tss_df, args.tss_file, args.chrom_sizes, feature_bam, feature, args.outDir, "Genes.TSS1kb", skip_rpkm_quantile=False, force=False, use_fast_count=True)
-        tss_df_1 = average_features(tss_df_1, feature.replace('feature_',''), feature_bam_list, skip_rpkm_quantile=False)
+            tss_df = count_single_feature_for_bed(tss_df, args.tss_file, args.chrom_sizes, feature_bam, feature, args.outDir, "Genes.TSS1kb", skip_rpkm_quantile=False, force=False, use_fast_count=True)
+        tss_df_1 = average_features(tss_df, feature.replace('feature_',''), feature_bam_list, skip_rpkm_quantile=False)
     chrom_sizes = args.chrom_sizes
     tss_file = args.tss_file
     sort_command = "bedtools sort -faidx {chrom_sizes} -i {tss_file} > {tss_file}.sorted; mv {tss_file}.sorted {tss_file}".format(**locals())
@@ -148,8 +150,8 @@ def process_genome_tss(args):
     t1 = time.time() - starttime
     print("This took {} seconds".format(t1))
     filtered_expressed_tsscounts = pd.read_csv(os.path.join(args.outDir, "expressed_genelist.txt"), sep="\t", header=None)
-    filtered_expressed_tsscounts_subset = filtered_expressed_tsscounts[[0,1,2,3,4,5,6,7,8,9]]
-    unique_tss = pd.read_csv("../reference/hg38/gencode.v29.transcripts.level12.basic.protein_coding.unique_TSS.input.bed", sep="\t", header=None)
+    filtered_expressed_tsscounts_subset = filtered_expressed_tsscounts[[0,1,2,3,4,5,6,7,8]]
+    unique_tss = pd.read_csv("/oak/stanford/groups/akundaje/kmualim/ABC-Enhancer-Gene-Prediction/reference/gencode.v29.transcripts.level12.basic.protein_coding.unique_TSS.input.bed", sep="\t", header=None)
     unique_tss_subset = unique_tss.loc[np.logical_not(unique_tss[3].isin(filtered_expressed_tsscounts[3]))]
     gene_tss_df = pd.concat([filtered_expressed_tsscounts, unique_tss_subset])
     gene_tss_df.to_csv(os.path.join(args.outDir, "comprehensive.alttss.list.txt"), sep="\t", index=False, header=False)
