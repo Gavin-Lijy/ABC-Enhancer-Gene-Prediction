@@ -1,6 +1,0 @@
-pred.col	agg.func	fill.val
-ABC.Score	sum	0
-distance	mean	Inf
-activity_base	sum	0
-
-

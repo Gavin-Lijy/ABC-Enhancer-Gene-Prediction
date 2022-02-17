@@ -1,2 +1,0 @@
-Rscript comparePredictionsToExperiment.R --predictions /users/kmualim/updated_ABC/github/ABC-Enhancer-Gene-Prediction/comparison/example/input/pred.table.txt --experimentalData ../example/input/K562.ExperimentalData.slim.txt --plotConfig ../CRISPR/plot.config.txt --predConfig ../CRISPR/pred.config.txt --code /users/kmualim/updated_ABC/github/ABC-Enhancer-Gene-Prediction/comparison/src/comparison.R --outDir test
-

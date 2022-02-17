@@ -1,3 +1,0 @@
-plot.name	pred.cols
-ABCPerformance	ABC_Score,activity,hic_contact
-
