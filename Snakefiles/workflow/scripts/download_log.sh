@@ -28,3 +28,7 @@ curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o bam_GRCh38_H3K27ac.tsv "https://www.en
 curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o fastq_GRCh38_DHS.tsv "https://www.encodeproject.org/metadata/?type=Experiment&status=released&assembly=GRCh38&assay_title=DNase-seq&files.file_type=fastq"
 curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o fastq_GRCh38_ATAC.tsv "https://www.encodeproject.org/metadata/?type=Experiment&status=released&assembly=GRCh38&assay_title=ATAC-seq&files.file_type=fastq"
 curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o fastq_GRCh38_H3K27ac.tsv "https://www.encodeproject.org/metadata/?type=Experiment&status=released&assembly=GRCh38&assay_title=Histone+ChIP-seq&target.label=H3K27ac&files.file_type=fastq"
+
+# downloading narrowPeak files
+curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o tf-chipseq-metadata-H3K27ac_bed.tsv "https://www.encodeproject.org/metadata/?type=Experiment&status=released&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&assay_title=Histone+ChIP-seq&target.label=H3K27ac&files.file_type=bed+narrowPeak"
+curl -L -u '3WWN6YZV:ek623s3asgxmgq4b' -o tf-chipseq-metadata-bed.tsv "https://www.encodeproject.org/metadata/?type=Experiment&status=released&replicates.library.biosample.donor.organism.scientific_name=Homo+sapiens&assay_title=DNase-seq&files.file_type=bed+narrowPeak"
