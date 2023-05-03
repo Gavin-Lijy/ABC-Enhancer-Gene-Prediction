@@ -101,8 +101,9 @@ def process_hic(hic_mat, hic_norm_file, hic_is_vc, resolution, tss_hic_contribut
         if hic_mat[last_idx, last_idx] != 0:
             hic_mat[last_idx, last_idx] = hic_mat[last_idx, last_idx - 1] * tss_hic_contribution / 100
 
-    #Any entries with low KR norm entries get set to NaN. These will be interpolated below
-    hic_mat = apply_kr_threshold(hic_mat, hic_norm_file, kr_cutoff)
+    if hic_norm_file is not None:
+        #Any entries with low KR norm entries get set to NaN. These will be interpolated below
+        hic_mat = apply_kr_threshold(hic_mat, hic_norm_file, kr_cutoff)
 
     #Remove lower triangle
     if not hic_is_vc:
