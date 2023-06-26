@@ -1,0 +1,13 @@
+__default__:
+        account : rosaxma
+        time : 09:00:00
+        partition : engreitz,owners
+        mem : 64G
+call_neighborhoods:
+        time : 023:00:00
+        partition : engreitz,owners
+        mem : 200G
+run_predictions:
+        time : 023:00:00
+        partition : engreitz,owners
+        mem: 128G

@@ -1,0 +1,53 @@
+
+# working directory where ABC repo is located 
+#working_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38"
+# directory to output DHS/H3k27ac bam files and other output metadata files
+# output_data_dir: "/oak/stanford/groups/engreitz/Users/kmualim/ENCODEData/bamfiles"
+# directory to output ABC Predictions
+hic_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/avg_track2"
+predictions_results_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/ABC_K562_peakcalling_comparison_pvalue_readdepth/ABC_output"
+envs_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg19/ABC-Enhancer-Gene-Prediction_abc_snakemake3/workflow/envs"
+code_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg19/ABC-Enhancer-Gene-Prediction_abc_snakemake3_avg_hic/workflow/scripts"
+#input_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/2207_ENCODE_alignment/evaluation/novaATAC_0113_0.6_manual/pseudobulk/combinedBAM/BAM/"
+biosamplesTable: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/ABC_K562_peakcalling_comparison_pvalue_readdepth/biosamples.tsv"
+# if input data is provided, generate and use cell-type specific TSS annotations 
+use_altTSS: False
+
+# parameters to determine whether to apply pooling + number of threads 
+# leave blank if not applicable 
+pooling_param: "--apply_pool"
+threads: 12
+
+params_macs:
+        pval: 0.1
+        threads: 12
+
+# These parameters are used to run the Run Candidate Regions portion of the abc code 
+params_candidate:
+        DHS: False
+        chrom_sizes: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/hg38.chrom.sizes"
+        regions_blocklist: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/blacklist.bed"
+        genome_tss: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.TSS500bp.bed"
+        peakExtendFromSummit: 250
+        nStrongestPeaks: 150000
+
+# These parameters are used to run the Run Neighborhoods portion of the abc code
+params_neighborhoods:
+        ubiquitous_genes: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/UbiquitouslyExpressedGenesHG19.txt"
+        qnorm: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/EnhancersQNormRef.K562.txt"
+        genes: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.bed"
+
+params_get_expressed_genes:
+        promoter_activity_quantile_cutoff: 0
+
+
+# These parameters are used to run the Predictions portion of the abc code
+params_predict:
+        hic_resolution: 5000
+        scale_hic: "--scale_hic_using_powerlaw"
+        threshold: 0.02
+        all_putative: "--make_all_putative"
+        self_promoter: "--include_self_promoter"
+        chrom_sizes: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/hg38.chrom.sizes"
+        hic_type: "avg"
+alternative_thresholds: [0, 0.015]

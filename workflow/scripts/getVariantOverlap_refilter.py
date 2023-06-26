@@ -5,22 +5,20 @@ import numpy as np
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--all_putative')
+    parser.add_argument('--allPutative')
     parser.add_argument('--score_column', default="ABC.Score")
     parser.add_argument('--chrom_sizes')
     parser.add_argument('--outdir')
+    parser.add_argument('--threshold')
     args = parser.parse_args()
     return args
 
 def test_variant_overlap(args, all_putative):
-    variant_overlap_file = os.path.join(args.outdir, "EnhancerPredictionsAllPutative.ForVariantOverlap.shrunk150bp.txt.gz")
+    variant_overlap_file = os.path.join(args.outdir, f"EnhancerPredictionsAllPutative.ForVariantOverlap.shrunk150bp_ABC_threshold{args.threshold}.txt.gz")
     # generate predictions for variant overlap
-    score_t = all_putative[args.score_column] > 0.015
+    score_t = all_putative[args.score_column] > float(args.threshold)
     not_promoter = all_putative['class'] != "promoter"
-    is_promoter = all_putative['class'] == "promoter"
-    score_one = all_putative[args.score_column] > 0.1
-    all_putative[(score_t & not_promoter) | (is_promoter & score_one)]
-    variant_overlap =all_putative[(score_t & not_promoter) | (is_promoter & score_one)]
+    variant_overlap =all_putative[(score_t & not_promoter)]
     # remove nan predictions
     variant_overlap_pred = variant_overlap.dropna(subset=[args.score_column])
     variant_overlap = variant_overlap_pred.loc[variant_overlap_pred['distance']<= 2000000]
@@ -33,5 +31,5 @@ def test_variant_overlap(args, all_putative):
 
 if __name__=="__main__":
     args = parse_args()
-    all_putative = pd.read_csv(args.all_putative, sep="\t")
+    all_putative = pd.read_csv(args.allPutative, sep="\t")
     test_variant_overlap(args, all_putative)
