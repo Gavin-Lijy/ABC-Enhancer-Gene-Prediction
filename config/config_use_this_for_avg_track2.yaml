@@ -1,0 +1,35 @@
+# working directory is ABC-Enhancer-Gene-Prediction 
+
+### INPUT DATA
+# Add your inputs here
+biosamplesTable: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/K562_ABC_pipeline_benchmark/config/config-biosamples.tsv"
+
+### OUTPUT DATA
+predictions_results_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/K562_ABC_pipeline_benchmark/ABC_output"
+envs_dir: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/workflow/envs"
+### PARAMS
+params_macs:
+        pval: 0.1
+        threads: 10
+
+# These parameters are used to run the Run Candidate Regions portion of the abc code 
+params_candidate:
+        DHS: False
+        chrom_sizes: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/reference/hg38/chr_sizes"
+        regions_blocklist: "/oak/stanford/groups/engreitz/Users/rosaxma/ABC_single_cell_hg38/hg38_resources/blacklist.bed"
+        genome_tss: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/reference/hg38/RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.TSS500bp.bed"
+        peakExtendFromSummit: 250
+        nStrongestPeaks: 150000
+
+# These parameters are used to run the Run Neighborhoods portion of the abc code
+params_neighborhoods:
+        ubiquitous_genes: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/reference/UbiquitouslyExpressedGenes.txt"
+        qnorm: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/reference/EnhancersQNormRef.K562.txt"
+        genes: "/oak/stanford/groups/engreitz/Users/rosaxma/github_repos_2/ABC-Enhancer-Gene-Prediction/reference/hg38/RefSeqCurated.170308.bed.CollapsedGeneBounds.hg38.bed"
+# These parameters are used to run the Predictions portion of the abc code
+params_predict:
+        hic_resolution: 5000
+        flags: "--scale_hic_using_powerlaw --make_all_putative --include_self_promoter"
+        threshold: 0.02
+        hic_gamma: 1.024238616787792
+        hic_scale: 5.9594510043736655
