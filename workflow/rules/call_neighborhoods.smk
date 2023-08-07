@@ -12,6 +12,9 @@ rule call_neighborhoods:
 		ubiquitous_genes = config['ubiquitous_genes'],
 		chrom_sizes = config['chrom_sizes'],
 		qnorm = config['params_neighborhoods']['qnorm'],
+	resources:
+		mem_gb=128,
+		runtime_hr=6
 	conda:
 		"../envs/abcenv.yml"
 	output: 
