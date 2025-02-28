@@ -1,0 +1,69 @@
+JOB_ID=616678
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=32000, mem_mib=30518, disk_mb=1000, disk_mib=954
+Conda environments: ignored
+Select jobs to execute...
+
+[Fri Feb 28 10:49:03 2025]
+rule create_neighborhoods:
+    input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+    output: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/processed_genes_file.bed
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=K562_chr22
+    resources: mem_mb=32000, mem_mib=30518, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		# get sorted & unique gene list
+		# intersect first to remove alternate chromosomes
+		bedtools intersect -u -a example_chr/chr22/RefSeqCurated.170308.bed.CollapsedGeneBounds.chr22.hg38.bed -b /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed | 		bedtools sort -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv -i stdin | 		uniq > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/processed_genes_file.bed
+						
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/run.neighborhoods.py 			--candidate_enhancer_regions /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed 			--DHS example_chr/chr22/ENCFF860XAE.chr22.sorted.se.bam 			--ATAC  			--default_accessibility_feature DHS 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--chrom_sizes_bed /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed 			--outdir /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods 			--genes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/processed_genes_file.bed 			--ubiquitously_expressed_genes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/UbiquitouslyExpressedGenes.txt 			--H3K27ac example_chr/chr22/ENCFF790GFL.chr22.sorted.se.bam 			--qnorm /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/EnhancersQNormRef.K562.txt 
+		
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+Namespace(candidate_enhancer_regions='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed', outdir='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods', genes='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/processed_genes_file.bed', genes_for_class_assignment=None, ubiquitously_expressed_genes='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/UbiquitouslyExpressedGenes.txt', gene_name_annotations='symbol', primary_gene_identifier='symbol', skip_gene_counts=False, H3K27ac='example_chr/chr22/ENCFF790GFL.chr22.sorted.se.bam', DHS='example_chr/chr22/ENCFF860XAE.chr22.sorted.se.bam', ATAC=None, default_accessibility_feature='DHS', expression_table='', qnorm='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/EnhancersQNormRef.K562.txt', tss_slop_for_class_assignment=500, skip_rpkm_quantile=False, use_secondary_counting_method=False, chrom_sizes='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv', chrom_sizes_bed='/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed', enhancer_class_override=None, supplementary_features=None, cellType=None)
+Running command: bedtools sort -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv -i /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.TSS1kb.bed > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.TSS1kb.bed.sorted; mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.TSS1kb.bed.sorted /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.TSS1kb.bed
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Feature H3K27ac completed in 0.48916172981262207
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Feature DHS completed in 0.2330493927001953
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Feature H3K27ac completed in 0.13816475868225098
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Genes.TSS1kb.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Feature DHS completed in 0.17196083068847656
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.H3K27ac.ENCFF790GFL.chr22.sorted.se.bam.CountReads.bedgraph
+Feature H3K27ac completed in 2.264512062072754
+Generating /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Counting coverage for Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/Enhancers.DHS.ENCFF860XAE.chr22.sorted.se.bam.CountReads.bedgraph
+Feature DHS completed in 2.5901780128479004
+Assigning classes to enhancers
+Total enhancers: 17732
+         Promoters: 588
+         Genic: 9328
+         Intergenic: 7816
+Neighborhoods Complete! 
+
+[Fri Feb 28 10:49:11 2025]
+Finished job 0.
+1 of 1 steps (100%) done

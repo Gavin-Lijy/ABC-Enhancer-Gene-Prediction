@@ -1,0 +1,26 @@
+JOB_ID=616677
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954
+Conda environments: ignored
+Select jobs to execute...
+
+[Fri Feb 28 10:48:03 2025]
+rule make_candidate_regions:
+    input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted, example_chr/chr22/ENCFF860XAE.chr22.sorted.se.bam, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+    output: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=K562_chr22
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/makeCandidateRegions.py 			--narrowPeak /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted			--accessibility example_chr/chr22/ENCFF860XAE.chr22.sorted.se.bam 			--outDir /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--chrom_sizes_bed /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed 			--regions_blocklist /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_unified_blacklist.bed 			--regions_includelist example_chr/chr22/RefSeqCurated.170308.bed.CollapsedGeneBounds.chr22.hg38.TSS500bp.bed 			--peakExtendFromSummit 250 			--nStrongestPeak 150000
+		
+Running command: awk 'BEGIN {FS=OFS="\t"} (substr($1, length($1)) == "X" || substr($1, length($1)) == "Y") { $4 *= 2 } 1' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.ENCFF860XAE.chr22.sorted.se.bam.Counts.bed > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.ENCFF860XAE.chr22.sorted.se.bam.Counts.bed.tmp && mv /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.ENCFF860XAE.chr22.sorted.se.bam.Counts.bed.tmp /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.ENCFF860XAE.chr22.sorted.se.bam.Counts.bed
+Running piped cmds: ['bedtools sort -i /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.ENCFF860XAE.chr22.sorted.se.bam.Counts.bed -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv', 'bedtools merge -i stdin -c 4 -o max', 'sort -nr -k 4', 'head -n 150000', 'bedtools intersect -b stdin -a /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted -wa', 'awk \'{{print $1 "\\t" $2 + $10 "\\t" $2 + $10}}\'', 'bedtools slop -i stdin -b 250 -g /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv', 'bedtools sort -i stdin -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv', 'bedtools merge -i stdin', 'bedtools intersect -v -wa -a stdin -b /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_unified_blacklist.bed', 'cut -f 1-3', '(bedtools intersect -a example_chr/chr22/RefSeqCurated.170308.bed.CollapsedGeneBounds.chr22.hg38.TSS500bp.bed -b /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed -wa | cut -f 1-3 && cat)', 'bedtools sort -i stdin -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv', 'bedtools merge -i stdin > /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed']
+[Fri Feb 28 10:48:13 2025]
+Finished job 0.
+1 of 1 steps (100%) done
