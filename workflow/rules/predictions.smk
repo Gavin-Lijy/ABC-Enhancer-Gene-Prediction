@@ -55,9 +55,9 @@ rule filter_predictions:
 		allPutativeNonExpressed = os.path.join(RESULTS_DIR, "{biosample}", "Predictions", "EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz"),
 	params:
 		score_column = config['params_filter_predictions']['score_column'],
-		threshold = lambda wildcards: determine_threshold(wildcards.biosample),
-		include_self_promoter = config['params_filter_predictions']['include_self_promoter'],
-		only_expressed_genes = config['params_filter_predictions']['only_expressed_genes'],
+		threshold = lambda wildcards: str(determine_threshold(wildcards.biosample)),
+		include_self_promoter = str(config['params_filter_predictions']['include_self_promoter']),
+		only_expressed_genes = str(config['params_filter_predictions']['only_expressed_genes']),
 	conda:
 		"../envs/abcenv.yml"
 	output:

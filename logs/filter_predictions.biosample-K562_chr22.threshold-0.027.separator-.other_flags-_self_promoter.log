@@ -1,0 +1,24 @@
+JOB_ID=617056
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954
+Conda environments: ignored
+Select jobs to execute...
+
+[Fri Feb 28 16:10:03 2025]
+rule filter_predictions:
+    input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutative.tsv.gz, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz
+    output: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsFull_threshold0.027_self_promoter.tsv, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsFull_threshold0.027_self_promoter.bedpe.gz, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictions_threshold0.027_self_promoter.tsv, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/GenePredictionStats_threshold0.027_self_promoter.tsv
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=K562_chr22, threshold=0.027, separator=, other_flags=_self_promoter
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/filter_predictions.py 			--output_tsv_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsFull_threshold0.027_self_promoter.tsv 			--output_slim_tsv_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictions_threshold0.027_self_promoter.tsv 			--output_bed_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsFull_threshold0.027_self_promoter.bedpe.gz 			--output_gene_stats_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/GenePredictionStats_threshold0.027_self_promoter.tsv 			--pred_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutative.tsv.gz 			--pred_nonexpressed_file /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz 			--score_column ABC.Score 			--threshold 0.027 			--include_self_promoter True 			--only_expressed_genes False
+		
+[Fri Feb 28 16:10:12 2025]
+Finished job 0.
+1 of 1 steps (100%) done

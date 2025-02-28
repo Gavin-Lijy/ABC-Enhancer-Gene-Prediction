@@ -1,4 +1,4 @@
-JOB_ID=616680
+JOB_ID=617055
 Building DAG of jobs...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
@@ -7,7 +7,7 @@ Provided resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954
 Conda environments: ignored
 Select jobs to execute...
 
-[Fri Feb 28 10:56:37 2025]
+[Fri Feb 28 15:45:53 2025]
 rule create_predictions:
     input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt
     output: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutative.tsv.gz, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz
@@ -17,23 +17,26 @@ rule create_predictions:
     resources: mem_mb=20000, mem_mib=19074, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
 
 
-		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py 			--enhancers /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt 			--outdir /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions 			--score_column ABC.Score 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--accessibility_feature DHS 			--cellType K562_chr22 			--genes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt 			--hic_gamma 1.024238616787792 			--hic_scale 5.9594510043736655 			--hic_pseudocount_distance 5000 			--hic_file https://www.encodeproject.org/files/ENCFF621AIY/@@download/ENCFF621AIY.hic --hic_type hic --hic_resolution 5000 			--scale_hic_using_powerlaw
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py 			--enhancers /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt 			--outdir /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions 			--score_column ABC.Score 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--accessibility_feature DHS 			--cellType K562_chr22 			--genes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt 			--hic_gamma 1.024238616787792 			--hic_scale 5.9594510043736655 			--hic_pseudocount_distance 5000 			--hic_file ENCFF621AIY.hic --hic_type hic --hic_resolution 5000 			--scale_hic_using_powerlaw
 		
 /home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   return {k: v for k, v in df.groupby(grpby_key)}
 /home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   return {k: v for k, v in df.groupby(grpby_key)}
-[Fri Feb 28 10:56:41 2025]
-Error in rule create_predictions:
-    jobid: 0
-    input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt
-    output: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutative.tsv.gz, /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz
-    conda-env: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/.snakemake/conda/27b3ba2237e1a8fca34b6e8fc0991b47_
-    shell:
-        
-		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py 			--enhancers /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/EnhancerList.txt 			--outdir /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Predictions 			--score_column ABC.Score 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--accessibility_feature DHS 			--cellType K562_chr22 			--genes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/results/K562_chr22/Neighborhoods/GeneList.txt 			--hic_gamma 1.024238616787792 			--hic_scale 5.9594510043736655 			--hic_pseudocount_distance 5000 			--hic_file https://www.encodeproject.org/files/ENCFF621AIY/@@download/ENCFF621AIY.hic --hic_type hic --hic_resolution 5000 			--scale_hic_using_powerlaw
-		
-        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+reading genes
+reading enhancers
+Making predictions for chromosome: chr22
+Making putative predictions table...
+Done. There are 2391900 putative enhancers for chromosome chr22
+Elapsed time: 2.0965075492858887
+Begin HiC
+HiC added to predictions table. Elapsed time: 6.403078317642212
+HiC Complete
+Completed chromosome: chr22. Elapsed time: 9.790685892105103 
 
-Shutting down, this might take some time.
-Exiting because a job execution failed. Look above for error message
+Writing output files...
+Done.
+Done.
+[Fri Feb 28 15:47:58 2025]
+Finished job 0.
+1 of 1 steps (100%) done
