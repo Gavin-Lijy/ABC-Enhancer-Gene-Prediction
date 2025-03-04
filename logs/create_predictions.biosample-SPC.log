@@ -83,3 +83,31 @@ rule create_predictions:
   return {k: v for k, v in df.groupby(grpby_key)}
 /home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}

@@ -2,7 +2,7 @@
 
 ### INPUT DATA
 # Add your inputs here
-biosamplesTable: "config/SPC.tsv"  # replace with your own config/config_biosamples.tsv
+biosamplesTable: "config/samples.tsv"  # replace with your own config/config_biosamples.tsv
 
 ### OUTPUT DATA
 results_dir: "/home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/"
