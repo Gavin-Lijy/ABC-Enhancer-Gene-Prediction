@@ -1,0 +1,76 @@
+JOB_ID=618447
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=200000, mem_mib=190735, disk_mb=1000, disk_mib=954
+Conda environments: ignored
+Select jobs to execute...
+
+[Tue Mar  4 15:37:31 2025]
+rule create_predictions:
+    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/EnhancerList.txt, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/GeneList.txt
+    output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions/EnhancerPredictionsAllPutative.tsv.gz, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=SPC
+    resources: mem_mb=200000, mem_mib=190735, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py 			--enhancers /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/EnhancerList.txt 			--outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions 			--score_column ABC.Score 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--accessibility_feature ATAC 			--cellType SPC 			--genes /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/GeneList.txt 			--hic_gamma 1.024238616787792 			--hic_scale 5.9594510043736655 			--hic_pseudocount_distance 5000 			--hic_file /home/jl9324/Sperm_3D_Genome_Project/wo_trimming_fanc/cool/SPC_5kb.hic --hic_type hic --hic_resolution 5000 			--scale_hic_using_powerlaw
+		
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+File did not contain SCALE normalization vectors for one or both chromosomes at 5000 BP
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+reading genes
+reading enhancers
+Making predictions for chromosome: chr1
+Making putative predictions table...
+Done. There are 1519959 putative enhancers for chromosome chr1
+Elapsed time: 1.1866295337677002
+Begin HiC
+Traceback (most recent call last):
+  File "/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'counts'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py", line 312, in <module>
+    main()
+  File "/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py", line 251, in main
+    this_chr = make_predictions(
+  File "/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predictor.py", line 28, in make_predictions
+    pred = add_hic_from_hic_file(
+  File "/home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predictor.py", line 252, in add_hic_from_hic_file
+    pred["counts"] /= row_mean
+  File "/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'counts'
+[Tue Mar  4 15:37:37 2025]
+Error in rule create_predictions:
+    jobid: 0
+    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/EnhancerList.txt, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/GeneList.txt
+    output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions/EnhancerPredictionsAllPutative.tsv.gz, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions/EnhancerPredictionsAllPutativeNonExpressedGenes.tsv.gz
+    conda-env: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/.snakemake/conda/27b3ba2237e1a8fca34b6e8fc0991b47_
+    shell:
+        
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/predict.py 			--enhancers /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/EnhancerList.txt 			--outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Predictions 			--score_column ABC.Score 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--accessibility_feature ATAC 			--cellType SPC 			--genes /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPC/Neighborhoods/GeneList.txt 			--hic_gamma 1.024238616787792 			--hic_scale 5.9594510043736655 			--hic_pseudocount_distance 5000 			--hic_file /home/jl9324/Sperm_3D_Genome_Project/wo_trimming_fanc/cool/SPC_5kb.hic --hic_type hic --hic_resolution 5000 			--scale_hic_using_powerlaw
+		
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
