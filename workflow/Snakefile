@@ -17,7 +17,7 @@ config = make_paths_absolute(config, ABC_DIR_PATH)
 RESULTS_DIR = config['results_dir']
 BIOSAMPLES_CONFIG = load_biosamples_config(config)
 SCRIPTS_DIR = os.path.join(ABC_DIR_PATH, "workflow/scripts")
-ABC_THRESHOLDS = load_abc_thresholds(config)
+ABC_THRESHOLDS = load_	abc_thresholds(config)
 include: "rules/macs2.smk"
 include: "rules/candidate_regions.smk"
 include: "rules/neighborhoods.smk"
