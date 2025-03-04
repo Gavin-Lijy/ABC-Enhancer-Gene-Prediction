@@ -216,7 +216,7 @@ def add_hic_from_hic_file(pred, hic_file, chromosome, hic_resolution):
     chromosome = get_chrom_format(hic, chromosome)
     chromosome_size = get_chrom_size(hic, chromosome)
     matrix_object = hic.getMatrixZoomData(
-        chromosome, chromosome, "observed", "SCALE", "BP", hic_resolution
+        chromosome, chromosome, "observed", "KR", "BP", hic_resolution
     )
     # start and end loci need to cover the entire chromosome b/c we do normalization
     start_loci = 0
@@ -246,7 +246,8 @@ def add_hic_from_hic_file(pred, hic_file, chromosome, hic_resolution):
                 # nan values in pred_df with new values from latest records
                 pred["counts"] = np.max(pred[["counts", "counts_"]], axis=1)
                 pred.drop("counts_", inplace=True, axis=1)
-
+    print(pred)
+    print(pred.columns)
     row_mean = np.mean(list(bin_sums.values()))
     # normalize hic_contact by the row_mean to reflect a doubly stochastic hic matrix
     pred["counts"] /= row_mean
