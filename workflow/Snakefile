@@ -8,6 +8,7 @@ min_version("7.0")
 configfile: "config/config.yaml"
 conda: "mamba"
 
+
 include: "rules/utils.smk"
 # Making paths absolute is important so that ABC can be 
 # used as a submodule for ENCODE-rE2G
