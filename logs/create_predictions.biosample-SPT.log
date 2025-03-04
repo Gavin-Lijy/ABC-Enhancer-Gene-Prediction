@@ -35,3 +35,823 @@ rule create_predictions:
   return {k: v for k, v in df.groupby(grpby_key)}
 /home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+/home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+  return {k: v for k, v in df.groupby(grpby_key)}
+reading genes
+reading enhancers
+Making predictions for chromosome: chr1
+Making putative predictions table...
+Done. There are 1347462 putative enhancers for chromosome chr1
+Elapsed time: 1.0572888851165771
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0        chr1       9919      10815  ...      2    931        NaN
+1        chr1       9919      10815  ...      2    882        NaN
+2        chr1       9919      10815  ...      2    788        NaN
+3        chr1       9919      10815  ...      2    780        NaN
+4        chr1       9919      10815  ...      2    780        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+1347556  chr1  248944694  248945877  ...  49747  49789  11.135454
+1347557  chr1  248944694  248945877  ...  49765  49789  11.576513
+1347558  chr1  248944694  248945877  ...  49767  49789        NaN
+1347559  chr1  248944694  248945877  ...  49771  49789   5.899861
+1347560  chr1  248944694  248945877  ...  49781  49789        NaN
+
+[1347462 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 90.37856888771057
+HiC Complete
+Completed chromosome: chr1. Elapsed time: 92.03413701057434 
+
+Making predictions for chromosome: chr10
+Making putative predictions table...
+Done. There are 423191 putative enhancers for chromosome chr10
+Elapsed time: 0.24495720863342285
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr10      11218      11718  ...      2    992        NaN
+1       chr10      11218      11718  ...      2    965        NaN
+2       chr10      11218      11718  ...      2    935        NaN
+3       chr10      11218      11718  ...      2    931        NaN
+4       chr10      11218      11718  ...      2    876        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+423215  chr10  133786891  133787586  ...  26684  26757        NaN
+423216  chr10  133786891  133787586  ...  26690  26757        NaN
+423217  chr10  133786891  133787586  ...  26705  26757  35.328163
+423218  chr10  133786891  133787586  ...  26713  26757  13.886559
+423219  chr10  133786891  133787586  ...  26725  26757        NaN
+
+[423191 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 45.17534899711609
+HiC Complete
+Completed chromosome: chr10. Elapsed time: 45.645541191101074 
+
+Making predictions for chromosome: chr11
+Making putative predictions table...
+Done. There are 902820 putative enhancers for chromosome chr11
+Elapsed time: 0.5945758819580078
+Begin HiC
+          chr      start        end  ...   binX   binY    counts
+0       chr11     131670     132170  ...     26    999       NaN
+1       chr11     131670     132170  ...     26    997       NaN
+2       chr11     131670     132170  ...     26    991       NaN
+3       chr11     131670     132170  ...     26    989       NaN
+4       chr11     131670     132170  ...     26    984       NaN
+...       ...        ...        ...  ...    ...    ...       ...
+902868  chr11  135075676  135076667  ...  26850  27015  5.293893
+902869  chr11  135075676  135076667  ...  26855  27015       NaN
+902870  chr11  135075676  135076667  ...  26866  27015  2.942591
+902871  chr11  135075676  135076667  ...  26882  27015       NaN
+902872  chr11  135075676  135076667  ...  26887  27015  6.915565
+
+[902820 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 47.75341463088989
+HiC Complete
+Completed chromosome: chr11. Elapsed time: 48.79382085800171 
+
+Making predictions for chromosome: chr12
+Making putative predictions table...
+Done. There are 647819 putative enhancers for chromosome chr12
+Elapsed time: 0.3848843574523926
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr12      12395      13571  ...      2    981        NaN
+1       chr12      12395      13571  ...      2    961        NaN
+2       chr12      12395      13571  ...      2    944        NaN
+3       chr12      12395      13571  ...      2    929        NaN
+4       chr12      12395      13571  ...      2    929        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+647862  chr12  133263995  133264495  ...  26616  26652  15.426049
+647863  chr12  133263995  133264495  ...  26626  26652   5.999938
+647864  chr12  133263995  133264495  ...  26626  26652   5.999938
+647865  chr12  133263995  133264495  ...  26636  26652  15.798800
+647866  chr12  133263995  133264495  ...  26647  26652  45.153877
+
+[647819 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 48.41502618789673
+HiC Complete
+Completed chromosome: chr12. Elapsed time: 49.11373710632324 
+
+Making predictions for chromosome: chr13
+Making putative predictions table...
+Done. There are 220784 putative enhancers for chromosome chr13
+Elapsed time: 0.1321268081665039
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr13   18194107   18194880  ...   3638   3781        NaN
+1       chr13   18194107   18194880  ...   3638   3836        NaN
+2       chr13   18194107   18194880  ...   3638   3869        NaN
+3       chr13   18194107   18194880  ...   3638   3907        NaN
+4       chr13   18194107   18194880  ...   3638   3917        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+220793  chr13  114352437  114353475  ...  22785  22870   5.610118
+220794  chr13  114352437  114353475  ...  22826  22870  42.535412
+220795  chr13  114352437  114353475  ...  22846  22870   9.834118
+220796  chr13  114352437  114353475  ...  22856  22870  27.668840
+220797  chr13  114352437  114353475  ...  22862  22870  25.943272
+
+[220784 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 36.22030162811279
+HiC Complete
+Completed chromosome: chr13. Elapsed time: 36.65844702720642 
+
+Making predictions for chromosome: chr14
+Making putative predictions table...
+Done. There are 377489 putative enhancers for chromosome chr14
+Elapsed time: 0.21911931037902832
+Begin HiC
+          chr      start        end  ...   binX   binY      counts
+0       chr14   18600866   18601366  ...   3720   3720  214.535995
+1       chr14   18600866   18601366  ...   3720   3793         NaN
+2       chr14   18600866   18601366  ...   3720   3886         NaN
+3       chr14   18600866   18601366  ...   3720   3942  625.569824
+4       chr14   18600866   18601366  ...   3720   3949   16.164946
+...       ...        ...        ...  ...    ...    ...         ...
+377511  chr14  106882804  106883920  ...  21098  21376    2.441328
+377512  chr14  106882804  106883920  ...  21105  21376    2.967753
+377513  chr14  106882804  106883920  ...  21183  21376         NaN
+377514  chr14  106882804  106883920  ...  21257  21376    3.209198
+377515  chr14  106882804  106883920  ...  21296  21376         NaN
+
+[377489 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 29.806873083114624
+HiC Complete
+Completed chromosome: chr14. Elapsed time: 30.30703568458557 
+
+Making predictions for chromosome: chr15
+Making putative predictions table...
+Done. There are 388536 putative enhancers for chromosome chr15
+Elapsed time: 0.23236775398254395
+Begin HiC
+          chr      start        end  ...   binX   binY  counts
+0       chr15   19943512   19944273  ...   3988   4108     NaN
+1       chr15   19943512   19944273  ...   3988   4188     NaN
+2       chr15   19943512   19944273  ...   3988   4288     NaN
+3       chr15   19943512   19944273  ...   3988   4288     NaN
+4       chr15   19943512   19944273  ...   3988   4288     NaN
+...       ...        ...        ...  ...    ...    ...     ...
+388551  chr15  101979973  101980965  ...  20344  20396     NaN
+388552  chr15  101979973  101980965  ...  20361  20396     NaN
+388553  chr15  101979973  101980965  ...  20363  20396     NaN
+388554  chr15  101979973  101980965  ...  20384  20396     NaN
+388555  chr15  101979973  101980965  ...  20390  20396     NaN
+
+[388536 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 23.51291513442993
+HiC Complete
+Completed chromosome: chr15. Elapsed time: 24.037123680114746 
+
+Making predictions for chromosome: chr16
+Making putative predictions table...
+Done. There are 611638 putative enhancers for chromosome chr16
+Elapsed time: 0.3507711887359619
+Begin HiC
+          chr     start       end  ...   binX   binY      counts
+0       chr16     10142     11301  ...      2    991         NaN
+1       chr16     10142     11301  ...      2    987         NaN
+2       chr16     10142     11301  ...      2    969         NaN
+3       chr16     10142     11301  ...      2    969         NaN
+4       chr16     10142     11301  ...      2    960         NaN
+...       ...       ...       ...  ...    ...    ...         ...
+611654  chr16  90106193  90106693  ...  17994  18021    6.550696
+611655  chr16  90106193  90106693  ...  18004  18021   13.516913
+611656  chr16  90106193  90106693  ...  18004  18021   13.516913
+611657  chr16  90106193  90106693  ...  18015  18021   27.984024
+611658  chr16  90106193  90106693  ...  18020  18021  505.605042
+
+[611638 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 19.326663970947266
+HiC Complete
+Completed chromosome: chr16. Elapsed time: 19.965281009674072 
+
+Making predictions for chromosome: chr17
+Making putative predictions table...
+Done. There are 989174 putative enhancers for chromosome chr17
+Elapsed time: 0.7023816108703613
+Begin HiC
+          chr     start       end  ...   binX   binY    counts
+0       chr17    143747    144247  ...     28    999       NaN
+1       chr17    143747    144247  ...     28    999       NaN
+2       chr17    143747    144247  ...     28    997       NaN
+3       chr17    143747    144247  ...     28    993       NaN
+4       chr17    143747    144247  ...     28    990  1.760690
+...       ...       ...       ...  ...    ...    ...       ...
+989211  chr17  83246975  83247475  ...  16547  16649       NaN
+989212  chr17  83246975  83247475  ...  16550  16649  9.822902
+989213  chr17  83246975  83247475  ...  16568  16649       NaN
+989214  chr17  83246975  83247475  ...  16610  16649       NaN
+989215  chr17  83246975  83247475  ...  16615  16649       NaN
+
+[989174 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 20.05230450630188
+HiC Complete
+Completed chromosome: chr17. Elapsed time: 21.177892208099365 
+
+Making predictions for chromosome: chr18
+Making putative predictions table...
+Done. There are 124676 putative enhancers for chromosome chr18
+Elapsed time: 0.08043551445007324
+Begin HiC
+          chr     start       end  ...   binX   binY     counts
+0       chr18     73034     73714  ...     14    769   1.428765
+1       chr18     73034     73714  ...     14    693        NaN
+2       chr18     73034     73714  ...     14    689        NaN
+3       chr18     73034     73714  ...     14    652        NaN
+4       chr18     73034     73714  ...     14    649        NaN
+...       ...       ...       ...  ...    ...    ...        ...
+124681  chr18  80262161  80262871  ...  15997  16052  23.853407
+124682  chr18  80262161  80262871  ...  16006  16052  16.993519
+124683  chr18  80262161  80262871  ...  16013  16052   8.251455
+124684  chr18  80262161  80262871  ...  16021  16052   4.401380
+124685  chr18  80262161  80262871  ...  16049  16052  60.334972
+
+[124676 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 25.615882873535156
+HiC Complete
+Completed chromosome: chr18. Elapsed time: 25.763651371002197 
+
+Making predictions for chromosome: chr19
+Making putative predictions table...
+Done. There are 1616218 putative enhancers for chromosome chr19
+Elapsed time: 1.134690523147583
+Begin HiC
+           chr     start       end  ...   binX   binY     counts
+0        chr19     93156     93656  ...     18    993        NaN
+1        chr19     93156     93656  ...     18    982        NaN
+2        chr19     93156     93656  ...     18    980        NaN
+3        chr19     93156     93656  ...     18    973        NaN
+4        chr19     93156     93656  ...     18    966        NaN
+...        ...       ...       ...  ...    ...    ...        ...
+1616333  chr19  58607103  58607603  ...  11703  11721  16.046415
+1616334  chr19  58607103  58607603  ...  11708  11721        NaN
+1616335  chr19  58607103  58607603  ...  11711  11721        NaN
+1616336  chr19  58607103  58607603  ...  11711  11721        NaN
+1616337  chr19  58607103  58607603  ...  11714  11721        NaN
+
+[1616218 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 12.442300081253052
+HiC Complete
+Completed chromosome: chr19. Elapsed time: 14.305757999420166 
+
+Making predictions for chromosome: chr2
+Making putative predictions table...
+Done. There are 659998 putative enhancers for chromosome chr2
+Elapsed time: 0.4699363708496094
+Begin HiC
+         chr      start        end  ...   binX   binY    counts
+0       chr2      10100      11046  ...      2    931       NaN
+1       chr2      10100      11046  ...      2    794       NaN
+2       chr2      10100      11046  ...      2    740       NaN
+3       chr2      10100      11046  ...      2    731  6.258687
+4       chr2      10100      11046  ...      2    718       NaN
+...      ...        ...        ...  ...    ...    ...       ...
+660034  chr2  242182239  242182739  ...  48362  48436       NaN
+660035  chr2  242182239  242182739  ...  48371  48436       NaN
+660036  chr2  242182239  242182739  ...  48373  48436       NaN
+660037  chr2  242182239  242182739  ...  48376  48436       NaN
+660038  chr2  242182239  242182739  ...  48394  48436       NaN
+
+[659998 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 108.53608417510986
+HiC Complete
+Completed chromosome: chr2. Elapsed time: 109.28401279449463 
+
+Making predictions for chromosome: chr20
+Making putative predictions table...
+Done. There are 404077 putative enhancers for chromosome chr20
+Elapsed time: 0.23572182655334473
+Begin HiC
+          chr     start       end  ...   binX   binY    counts
+0       chr20     60162     60662  ...     12    964       NaN
+1       chr20     60162     60662  ...     12    948       NaN
+2       chr20     60162     60662  ...     12    944       NaN
+3       chr20     60162     60662  ...     12    937       NaN
+4       chr20     60162     60662  ...     12    849       NaN
+...       ...       ...       ...  ...    ...    ...       ...
+404096  chr20  64327683  64328183  ...  12816  12865  3.129635
+404097  chr20  64327683  64328183  ...  12821  12865       NaN
+404098  chr20  64327683  64328183  ...  12832  12865  7.325399
+404099  chr20  64327683  64328183  ...  12851  12865  2.218337
+404100  chr20  64327683  64328183  ...  12858  12865       NaN
+
+[404077 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 15.796221733093262
+HiC Complete
+Completed chromosome: chr20. Elapsed time: 16.28461742401123 
+
+Making predictions for chromosome: chr21
+Making putative predictions table...
+Done. There are 189564 putative enhancers for chromosome chr21
+Elapsed time: 0.11502552032470703
+Begin HiC
+          chr     start       end  ...  binX  binY     counts
+0       chr21   6374300   6374800  ...  1274  2104        NaN
+1       chr21   6374802   6375302  ...  1275  2104        NaN
+2       chr21   7775454   7775954  ...  1555  2104        NaN
+3       chr21   7917868   7918368  ...  1583  2104        NaN
+4       chr21   7926157   7926657  ...  1585  2104   1.060663
+...       ...       ...       ...  ...   ...   ...        ...
+189572  chr21  46679242  46679742  ...  9264  9335   4.346163
+189573  chr21  46679242  46679742  ...  9264  9335   4.346163
+189574  chr21  46679242  46679742  ...  9291  9335   8.071978
+189575  chr21  46679242  46679742  ...  9321  9335  18.536427
+189576  chr21  46679242  46679742  ...  9327  9335  21.094412
+
+[189564 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 8.918509483337402
+HiC Complete
+Completed chromosome: chr21. Elapsed time: 9.139664649963379 
+
+Making predictions for chromosome: chr22
+Making putative predictions table...
+Done. There are 474923 putative enhancers for chromosome chr22
+Elapsed time: 0.2730529308319092
+Begin HiC
+          chr     start       end  ...   binX   binY      counts
+0       chr22  10716524  10717402  ...   2143   3105         NaN
+1       chr22  10716524  10717402  ...   2143   3138         NaN
+2       chr22  10726806  10727306  ...   2145   3105         NaN
+3       chr22  10726806  10727306  ...   2145   3138         NaN
+4       chr22  10727742  10728242  ...   2145   3105         NaN
+...       ...       ...       ...  ...    ...    ...         ...
+474954  chr22  50783385  50783909  ...  10120  10156    5.524132
+474955  chr22  50783385  50783909  ...  10125  10156         NaN
+474956  chr22  50783385  50783909  ...  10134  10156    2.226225
+474957  chr22  50783385  50783909  ...  10147  10156    7.186104
+474958  chr22  50783385  50783909  ...  10156  10156  296.099762
+
+[474923 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 7.115732431411743
+HiC Complete
+Completed chromosome: chr22. Elapsed time: 7.6048903465271 
+
+Making predictions for chromosome: chr3
+Making putative predictions table...
+Done. There are 698542 putative enhancers for chromosome chr3
+Elapsed time: 0.41436219215393066
+Begin HiC
+         chr      start        end  ...   binX   binY    counts
+0       chr3      10076      11213  ...      2    995       NaN
+1       chr3      10076      11213  ...      2    950       NaN
+2       chr3      10076      11213  ...      2    898       NaN
+3       chr3      10076      11213  ...      2    893       NaN
+4       chr3      10076      11213  ...      2    860       NaN
+...      ...        ...        ...  ...    ...    ...       ...
+698576  chr3  198167554  198168225  ...  39549  39633  2.250372
+698577  chr3  198167554  198168225  ...  39558  39633  4.170454
+698578  chr3  198167554  198168225  ...  39590  39633  2.356072
+698579  chr3  198167554  198168225  ...  39592  39633  4.301948
+698580  chr3  198167554  198168225  ...  39592  39633  4.301948
+
+[698542 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 84.92434334754944
+HiC Complete
+Completed chromosome: chr3. Elapsed time: 85.83962059020996 
+
+Making predictions for chromosome: chr4
+Making putative predictions table...
+Done. There are 368786 putative enhancers for chromosome chr4
+Elapsed time: 0.2317197322845459
+Begin HiC
+         chr      start        end  ...   binX   binY  counts
+0       chr4       9849      10945  ...      2    971     NaN
+1       chr4       9849      10945  ...      2    968     NaN
+2       chr4       9849      10945  ...      2    908     NaN
+3       chr4       9849      10945  ...      2    877     NaN
+4       chr4       9849      10945  ...      2    858     NaN
+...      ...        ...        ...  ...    ...    ...     ...
+368810  chr4  190203462  190203962  ...  37931  38040     NaN
+368811  chr4  190203462  190203962  ...  37976  38040     NaN
+368812  chr4  190203462  190203962  ...  37988  38040     NaN
+368813  chr4  190203462  190203962  ...  38005  38040     NaN
+368814  chr4  190203462  190203962  ...  38012  38040     NaN
+
+[368786 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 81.45412039756775
+HiC Complete
+Completed chromosome: chr4. Elapsed time: 82.04123830795288 
+
+Making predictions for chromosome: chr5
+Making putative predictions table...
+Done. There are 485906 putative enhancers for chromosome chr5
+Elapsed time: 0.2835559844970703
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr5      49311      49811  ...      9    954   1.303262
+1       chr5      49311      49811  ...      9    719        NaN
+2       chr5      49311      49811  ...      9    707        NaN
+3       chr5      49311      49811  ...      9    700        NaN
+4       chr5      49311      49811  ...      9    635   2.241970
+...      ...        ...        ...  ...    ...    ...        ...
+485946  chr5  181282407  181283249  ...  36244  36256  13.979471
+485947  chr5  181282407  181283249  ...  36248  36256  24.211750
+485948  chr5  181282407  181283249  ...  36249  36256  17.684603
+485949  chr5  181282407  181283249  ...  36252  36256  44.899330
+485950  chr5  181282407  181283249  ...  36252  36256  44.899330
+
+[485906 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 73.5835509300232
+HiC Complete
+Completed chromosome: chr5. Elapsed time: 74.20296478271484 
+
+Making predictions for chromosome: chr6
+Making putative predictions table...
+Done. There are 658757 putative enhancers for chromosome chr6
+Elapsed time: 0.3849472999572754
+Begin HiC
+         chr      start        end  ...   binX   binY      counts
+0       chr6     147755     149039  ...     29    955         NaN
+1       chr6     147755     149039  ...     29    922         NaN
+2       chr6     147755     149039  ...     29    827         NaN
+3       chr6     147755     149039  ...     29    815         NaN
+4       chr6     147755     149039  ...     29    815         NaN
+...      ...        ...        ...  ...    ...    ...         ...
+658817  chr6  170583988  170585283  ...  34058  34116    8.009664
+658818  chr6  170583988  170585283  ...  34061  34116    2.520566
+658819  chr6  170583988  170585283  ...  34110  34116   38.036480
+658820  chr6  170583988  170585283  ...  34110  34116   38.036480
+658821  chr6  170583988  170585283  ...  34116  34116  518.595703
+
+[658757 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 70.42207932472229
+HiC Complete
+Completed chromosome: chr6. Elapsed time: 71.12653183937073 
+
+Making predictions for chromosome: chr7
+Making putative predictions table...
+Done. There are 486804 putative enhancers for chromosome chr7
+Elapsed time: 0.29357171058654785
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr7      49861      50827  ...     10    991   1.472272
+1       chr7      49861      50827  ...     10    976        NaN
+2       chr7      49861      50827  ...     10    972   1.135589
+3       chr7      49861      50827  ...     10    955        NaN
+4       chr7      49861      50827  ...     10    936        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+486832  chr7  159335060  159336096  ...  31740  31867   5.920177
+486833  chr7  159335060  159336096  ...  31765  31867   6.802579
+486834  chr7  159335060  159336096  ...  31771  31867   6.512310
+486835  chr7  159335060  159336096  ...  31801  31867  13.770780
+486836  chr7  159335060  159336096  ...  31828  31867   6.682967
+
+[486804 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 58.196659564971924
+HiC Complete
+Completed chromosome: chr7. Elapsed time: 58.89309906959534 
+
+Making predictions for chromosome: chr8
+Making putative predictions table...
+Done. There are 341946 putative enhancers for chromosome chr8
+Elapsed time: 0.2008514404296875
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr8     166774     167274  ...     33    409        NaN
+1       chr8     166774     167274  ...     33    394        NaN
+2       chr8     166774     167274  ...     33    394        NaN
+3       chr8     166774     167274  ...     33    364        NaN
+4       chr8     166774     167274  ...     33    352        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+341957  chr8  145074994  145075774  ...  28965  29015  11.273639
+341958  chr8  145074994  145075774  ...  28970  29015   7.068614
+341959  chr8  145074994  145075774  ...  28980  29015   6.613036
+341960  chr8  145074994  145075774  ...  28990  29015   6.790944
+341961  chr8  145074994  145075774  ...  29010  29015  25.355425
+
+[341946 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 57.32251977920532
+HiC Complete
+Completed chromosome: chr8. Elapsed time: 57.81263542175293 
+
+Making predictions for chromosome: chr9
+Making putative predictions table...
+Done. There are 555153 putative enhancers for chromosome chr9
+Elapsed time: 0.32486605644226074
+Begin HiC
+         chr      start        end  ...   binX   binY    counts
+0       chr9      10097      11659  ...      2    997       NaN
+1       chr9      10097      11659  ...      2    958       NaN
+2       chr9      10097      11659  ...      2    948       NaN
+3       chr9      10097      11659  ...      2    935       NaN
+4       chr9      10097      11659  ...      2    935       NaN
+...      ...        ...        ...  ...    ...    ...       ...
+555194  chr9  138178383  138178883  ...  27518  27635       NaN
+555195  chr9  138178383  138178883  ...  27521  27635       NaN
+555196  chr9  138178383  138178883  ...  27523  27635  3.007237
+555197  chr9  138178383  138178883  ...  27552  27635  5.213617
+555198  chr9  138178383  138178883  ...  27575  27635  3.427057
+
+[555153 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 36.58253741264343
+HiC Complete
+Completed chromosome: chr9. Elapsed time: 37.20172715187073 
+
+Making predictions for chromosome: chrX
+Making putative predictions table...
+Done. There are 197018 putative enhancers for chromosome chrX
+Elapsed time: 0.11963486671447754
+Begin HiC
+         chr      start        end  ...   binX   binY  counts
+0       chrX     232529     233029  ...     46    742     NaN
+1       chrX     232529     233029  ...     46    669     NaN
+2       chrX     232529     233029  ...     46    654     NaN
+3       chrX     232529     233029  ...     46    613     NaN
+4       chrX     232529     233029  ...     46    601     NaN
+...      ...        ...        ...  ...    ...    ...     ...
+197026  chrX  156029752  156030855  ...  31066  31206     NaN
+197027  chrX  156029752  156030855  ...  31122  31206     NaN
+197028  chrX  156029752  156030855  ...  31153  31206     NaN
+197029  chrX  156029752  156030855  ...  31176  31206     NaN
+197030  chrX  156029752  156030855  ...  31199  31206     NaN
+
+[197018 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 39.584152936935425
+HiC Complete
+Completed chromosome: chrX. Elapsed time: 39.93459439277649 
+
+Writing output files...
+Done.
+Done.
+[Tue Mar  4 18:51:03 2025]
+Finished job 0.
+1 of 1 steps (100%) done
