@@ -1,0 +1,24 @@
+JOB_ID=618444
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=22684, mem_mib=21634, disk_mb=1418, disk_mib=1353
+Conda environments: ignored
+Select jobs to execute...
+
+[Tue Mar  4 15:19:32 2025]
+rule make_candidate_regions:
+    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak.sorted, /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+    output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak.sorted.candidateRegions.bed
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=SPT
+    resources: mem_mb=22684, mem_mib=21634, disk_mb=1418, disk_mib=1353, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		python /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/workflow/scripts/makeCandidateRegions.py 			--narrowPeak /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak.sorted			--accessibility /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz 			--outDir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks 			--chrom_sizes /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv 			--chrom_sizes_bed /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed 			--regions_blocklist /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_unified_blacklist.bed 			--regions_includelist /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/CollapsedGeneBounds.hg38.TSS500bp.bed 			--peakExtendFromSummit 250 			--nStrongestPeak 150000
+		
+***** WARNING: File /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz has inconsistent naming convention for record:
+GL000009.2	3332	3356	N	1000	+
+

@@ -1,0 +1,31 @@
+JOB_ID=618443
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954
+Conda environments: ignored
+Select jobs to execute...
+
+[Tue Mar  4 15:19:13 2025]
+rule sort_narrowpeaks:
+    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak, /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+    output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak.sorted
+    jobid: 0
+    reason: Forced execution
+    wildcards: biosample=SPT
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
+
+
+		# intersect to remove alternate chromosomes
+		bedtools intersect -u -a /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak -b /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed | 		bedtools sort -faidx /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv -i stdin > /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak.sorted
+		
+***** WARNING: File /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak has inconsistent naming convention for record:
+GL000194.1	21589	21786	macs2_peak_1	52	.	2.64783	5.21496	3.3765	91
+
+***** WARNING: File /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak has inconsistent naming convention for record:
+GL000194.1	21589	21786	macs2_peak_1	52	.	2.64783	5.21496	3.3765	91
+
+[Tue Mar  4 15:19:17 2025]
+Finished job 0.
+1 of 1 steps (100%) done

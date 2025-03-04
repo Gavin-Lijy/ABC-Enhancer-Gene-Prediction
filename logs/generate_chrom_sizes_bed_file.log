@@ -1,4 +1,4 @@
-JOB_ID=615686
+JOB_ID=618441
 Building DAG of jobs...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
@@ -7,17 +7,17 @@ Provided resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954
 Conda environments: ignored
 Select jobs to execute...
 
-[Wed Feb 26 11:32:26 2025]
+[Tue Mar  4 15:10:08 2025]
 rule generate_chrom_sizes_bed_file:
     input: /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv
-    output: results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+    output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
     jobid: 0
     reason: Forced execution
     resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
 
 
-		awk 'BEGIN {OFS="	"} {if (NF > 0) print $1,"0",$2 ; else print $0}' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv > results/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
+		awk 'BEGIN {OFS="	"} {if (NF > 0) print $1,"0",$2 ; else print $0}' /home/jl9324/env/download/ABC-Enhancer-Gene-Prediction/reference/hg38/GRCh38_EBV.no_alt.chrom.sizes.tsv > /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/tmp/GRCh38_EBV.no_alt.chrom.sizes.tsv.bed
 		
-[Wed Feb 26 11:32:26 2025]
+[Tue Mar  4 15:10:08 2025]
 Finished job 0.
 1 of 1 steps (100%) done
