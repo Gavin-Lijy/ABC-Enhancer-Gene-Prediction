@@ -111,3 +111,747 @@ rule create_predictions:
   return {k: v for k, v in df.groupby(grpby_key)}
 /home/jl9324/miniforge3/envs/abc-env/lib/python3.10/site-packages/pyranges/methods/init.py:45: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   return {k: v for k, v in df.groupby(grpby_key)}
+reading genes
+reading enhancers
+Making predictions for chromosome: chr1
+Making putative predictions table...
+Done. There are 1519959 putative enhancers for chromosome chr1
+Elapsed time: 1.1857941150665283
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0        chr1       9933      10772  ...      2    931        NaN
+1        chr1       9933      10772  ...      2    882        NaN
+2        chr1       9933      10772  ...      2    788        NaN
+3        chr1       9933      10772  ...      2    780   6.165418
+4        chr1       9933      10772  ...      2    780   6.165418
+...       ...        ...        ...  ...    ...    ...        ...
+1520081  chr1  248945912  248946412  ...  49747  49789   3.938968
+1520082  chr1  248945912  248946412  ...  49765  49789   7.603879
+1520083  chr1  248945912  248946412  ...  49767  49789   6.549568
+1520084  chr1  248945912  248946412  ...  49771  49789   7.286001
+1520085  chr1  248945912  248946412  ...  49781  49789  27.947287
+
+[1519959 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 88.47019648551941
+HiC Complete
+Completed chromosome: chr1. Elapsed time: 90.39895033836365 
+
+Making predictions for chromosome: chr10
+Making putative predictions table...
+Done. There are 470243 putative enhancers for chromosome chr10
+Elapsed time: 0.267223596572876
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr10      10524      11024  ...      2    992        NaN
+1       chr10      10524      11024  ...      2    965        NaN
+2       chr10      10524      11024  ...      2    935        NaN
+3       chr10      10524      11024  ...      2    931        NaN
+4       chr10      10524      11024  ...      2    876        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+470275  chr10  133785612  133787553  ...  26684  26757        NaN
+470276  chr10  133785612  133787553  ...  26690  26757   6.886142
+470277  chr10  133785612  133787553  ...  26705  26757  20.866280
+470278  chr10  133785612  133787553  ...  26713  26757  14.851271
+470279  chr10  133785612  133787553  ...  26725  26757  16.795383
+
+[470243 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 47.50897526741028
+HiC Complete
+Completed chromosome: chr10. Elapsed time: 48.0325973033905 
+
+Making predictions for chromosome: chr11
+Making putative predictions table...
+Done. There are 1023557 putative enhancers for chromosome chr11
+Elapsed time: 0.721529483795166
+Begin HiC
+           chr      start        end  ...   binX   binY     counts
+0        chr11     131670     132170  ...     26    999        NaN
+1        chr11     131670     132170  ...     26    997        NaN
+2        chr11     131670     132170  ...     26    991        NaN
+3        chr11     131670     132170  ...     26    989        NaN
+4        chr11     131670     132170  ...     26    984        NaN
+...        ...        ...        ...  ...    ...    ...        ...
+1023624  chr11  135076176  135076676  ...  26850  27015  16.789648
+1023625  chr11  135076176  135076676  ...  26855  27015   4.378095
+1023626  chr11  135076176  135076676  ...  26866  27015   7.783017
+1023627  chr11  135076176  135076676  ...  26882  27015   2.695467
+1023628  chr11  135076176  135076676  ...  26887  27015  12.373524
+
+[1023557 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 50.25144338607788
+HiC Complete
+Completed chromosome: chr11. Elapsed time: 51.47597670555115 
+
+Making predictions for chromosome: chr12
+Making putative predictions table...
+Done. There are 725433 putative enhancers for chromosome chr12
+Elapsed time: 0.45656847953796387
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr12      12437      13516  ...      2    981        NaN
+1       chr12      12437      13516  ...      2    961        NaN
+2       chr12      12437      13516  ...      2    944        NaN
+3       chr12      12437      13516  ...      2    929        NaN
+4       chr12      12437      13516  ...      2    929        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+725485  chr12  133263998  133264881  ...  26616  26652  26.022165
+725486  chr12  133263998  133264881  ...  26626  26652  16.938282
+725487  chr12  133263998  133264881  ...  26626  26652  16.938282
+725488  chr12  133263998  133264881  ...  26636  26652   7.113614
+725489  chr12  133263998  133264881  ...  26647  26652  52.089897
+
+[725433 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 51.23915457725525
+HiC Complete
+Completed chromosome: chr12. Elapsed time: 52.023717641830444 
+
+Making predictions for chromosome: chr13
+Making putative predictions table...
+Done. There are 221129 putative enhancers for chromosome chr13
+Elapsed time: 0.1321260929107666
+Begin HiC
+          chr      start        end  ...   binX   binY      counts
+0       chr13   18194085   18194994  ...   3638   3781   10.515897
+1       chr13   18194085   18194994  ...   3638   3836         NaN
+2       chr13   18194085   18194994  ...   3638   3869    2.864740
+3       chr13   18194085   18194994  ...   3638   3907         NaN
+4       chr13   18194085   18194994  ...   3638   3917         NaN
+...       ...        ...        ...  ...    ...    ...         ...
+221138  chr13  114352720  114354174  ...  22785  22870    9.375943
+221139  chr13  114352720  114354174  ...  22826  22870   29.203201
+221140  chr13  114352720  114354174  ...  22846  22870   42.484371
+221141  chr13  114352720  114354174  ...  22856  22870   19.795639
+221142  chr13  114352720  114354174  ...  22862  22870  101.653000
+
+[221129 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 42.75873017311096
+HiC Complete
+Completed chromosome: chr13. Elapsed time: 43.22166705131531 
+
+Making predictions for chromosome: chr14
+Making putative predictions table...
+Done. There are 413784 putative enhancers for chromosome chr14
+Elapsed time: 0.2435436248779297
+Begin HiC
+          chr      start        end  ...   binX   binY      counts
+0       chr14   18600866   18601366  ...   3720   3720  325.450714
+1       chr14   18600866   18601366  ...   3720   3793         NaN
+2       chr14   18600866   18601366  ...   3720   3886         NaN
+3       chr14   18600866   18601366  ...   3720   3942  983.577759
+4       chr14   18600866   18601366  ...   3720   3949    8.587254
+...       ...        ...        ...  ...    ...    ...         ...
+413802  chr14  106883098  106883889  ...  21098  21376    5.984044
+413803  chr14  106883098  106883889  ...  21105  21376    7.833059
+413804  chr14  106883098  106883889  ...  21183  21376    1.919059
+413805  chr14  106883098  106883889  ...  21257  21376   11.318022
+413806  chr14  106883098  106883889  ...  21296  21376    9.249519
+
+[413784 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 32.46408486366272
+HiC Complete
+Completed chromosome: chr14. Elapsed time: 33.01207661628723 
+
+Making predictions for chromosome: chr15
+Making putative predictions table...
+Done. There are 433628 putative enhancers for chromosome chr15
+Elapsed time: 0.2623481750488281
+Begin HiC
+          chr      start        end  ...   binX   binY     counts
+0       chr15   19943505   19945219  ...   3988   4108        NaN
+1       chr15   19943505   19945219  ...   3988   4188        NaN
+2       chr15   19943505   19945219  ...   3988   4288        NaN
+3       chr15   19943505   19945219  ...   3988   4288        NaN
+4       chr15   19943505   19945219  ...   3988   4288        NaN
+...       ...        ...        ...  ...    ...    ...        ...
+433655  chr15  101980020  101981043  ...  20344  20396        NaN
+433656  chr15  101980020  101981043  ...  20361  20396  11.039467
+433657  chr15  101980020  101981043  ...  20363  20396        NaN
+433658  chr15  101980020  101981043  ...  20384  20396        NaN
+433659  chr15  101980020  101981043  ...  20390  20396        NaN
+
+[433628 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 24.425336360931396
+HiC Complete
+Completed chromosome: chr15. Elapsed time: 24.97281241416931 
+
+Making predictions for chromosome: chr16
+Making putative predictions table...
+Done. There are 710590 putative enhancers for chromosome chr16
+Elapsed time: 0.4063589572906494
+Begin HiC
+          chr     start       end  ...   binX   binY      counts
+0       chr16      9893     11297  ...      2    991         NaN
+1       chr16      9893     11297  ...      2    987         NaN
+2       chr16      9893     11297  ...      2    969         NaN
+3       chr16      9893     11297  ...      2    969         NaN
+4       chr16      9893     11297  ...      2    960         NaN
+...       ...       ...       ...  ...    ...    ...         ...
+710619  chr16  90105822  90107073  ...  17994  18021    7.375237
+710620  chr16  90105822  90107073  ...  18004  18021   14.032538
+710621  chr16  90105822  90107073  ...  18004  18021   14.032538
+710622  chr16  90105822  90107073  ...  18015  18021   35.309723
+710623  chr16  90105822  90107073  ...  18020  18021  697.021545
+
+[710590 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 21.702675104141235
+HiC Complete
+Completed chromosome: chr16. Elapsed time: 22.43942880630493 
+
+Making predictions for chromosome: chr17
+Making putative predictions table...
+Done. There are 1191319 putative enhancers for chromosome chr17
+Elapsed time: 0.7746367454528809
+Begin HiC
+           chr     start       end  ...   binX   binY    counts
+0        chr17    113039    113539  ...     22    999       NaN
+1        chr17    113039    113539  ...     22    999       NaN
+2        chr17    113039    113539  ...     22    997       NaN
+3        chr17    113039    113539  ...     22    993       NaN
+4        chr17    113039    113539  ...     22    990       NaN
+...        ...       ...       ...  ...    ...    ...       ...
+1191384  chr17  83246977  83247477  ...  16547  16649       NaN
+1191385  chr17  83246977  83247477  ...  16550  16649  6.152218
+1191386  chr17  83246977  83247477  ...  16568  16649       NaN
+1191387  chr17  83246977  83247477  ...  16610  16649       NaN
+1191388  chr17  83246977  83247477  ...  16615  16649       NaN
+
+[1191319 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 21.648639678955078
+HiC Complete
+Completed chromosome: chr17. Elapsed time: 22.941056966781616 
+
+Making predictions for chromosome: chr18
+Making putative predictions table...
+Done. There are 138499 putative enhancers for chromosome chr18
+Elapsed time: 0.0872042179107666
+Begin HiC
+          chr     start       end  ...   binX   binY     counts
+0       chr18      9907     11089  ...      2    769        NaN
+1       chr18      9907     11089  ...      2    693        NaN
+2       chr18      9907     11089  ...      2    689        NaN
+3       chr18      9907     11089  ...      2    652        NaN
+4       chr18      9907     11089  ...      2    649        NaN
+...       ...       ...       ...  ...    ...    ...        ...
+138509  chr18  80262144  80263136  ...  15997  16052   9.151580
+138510  chr18  80262144  80263136  ...  16006  16052  18.461380
+138511  chr18  80262144  80263136  ...  16013  16052   8.682125
+138512  chr18  80262144  80263136  ...  16021  16052  19.929203
+138513  chr18  80262144  80263136  ...  16049  16052  93.756088
+
+[138499 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 30.058478355407715
+HiC Complete
+Completed chromosome: chr18. Elapsed time: 30.22249174118042 
+
+Making predictions for chromosome: chr19
+Making putative predictions table...
+Done. There are 1866707 putative enhancers for chromosome chr19
+Elapsed time: 1.3827850818634033
+Begin HiC
+           chr     start       end  ...   binX   binY     counts
+0        chr19     92919     93841  ...     18    993        NaN
+1        chr19     92919     93841  ...     18    982        NaN
+2        chr19     92919     93841  ...     18    980        NaN
+3        chr19     92919     93841  ...     18    973        NaN
+4        chr19     92919     93841  ...     18    966        NaN
+...        ...       ...       ...  ...    ...    ...        ...
+1866869  chr19  58607045  58607717  ...  11703  11721  11.093740
+1866870  chr19  58607045  58607717  ...  11708  11721  16.919821
+1866871  chr19  58607045  58607717  ...  11711  11721  57.454586
+1866872  chr19  58607045  58607717  ...  11711  11721  57.454586
+1866873  chr19  58607045  58607717  ...  11714  11721  70.862114
+
+[1866707 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 13.154167890548706
+HiC Complete
+Completed chromosome: chr19. Elapsed time: 15.39017629623413 
+
+Making predictions for chromosome: chr2
+Making putative predictions table...
+Done. There are 727639 putative enhancers for chromosome chr2
+Elapsed time: 0.5379748344421387
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr2      10082      11027  ...      2    931        NaN
+1       chr2      10082      11027  ...      2    794        NaN
+2       chr2      10082      11027  ...      2    740        NaN
+3       chr2      10082      11027  ...      2    731        NaN
+4       chr2      10082      11027  ...      2    718        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+727693  chr2  242183150  242183650  ...  48362  48436        NaN
+727694  chr2  242183150  242183650  ...  48371  48436        NaN
+727695  chr2  242183150  242183650  ...  48373  48436  12.128568
+727696  chr2  242183150  242183650  ...  48376  48436   5.456790
+727697  chr2  242183150  242183650  ...  48394  48436   5.869173
+
+[727639 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 103.14994096755981
+HiC Complete
+Completed chromosome: chr2. Elapsed time: 103.99622392654419 
+
+Making predictions for chromosome: chr20
+Making putative predictions table...
+Done. There are 456773 putative enhancers for chromosome chr20
+Elapsed time: 0.26590847969055176
+Begin HiC
+          chr     start       end  ...   binX   binY     counts
+0       chr20     60094     62626  ...     12    964        NaN
+1       chr20     60094     62626  ...     12    948        NaN
+2       chr20     60094     62626  ...     12    944        NaN
+3       chr20     60094     62626  ...     12    937        NaN
+4       chr20     60094     62626  ...     12    849        NaN
+...       ...       ...       ...  ...    ...    ...        ...
+456797  chr20  64327153  64328489  ...  12816  12865   4.455653
+456798  chr20  64327153  64328489  ...  12821  12865   9.321342
+456799  chr20  64327153  64328489  ...  12832  12865   6.923137
+456800  chr20  64327153  64328489  ...  12851  12865  25.046366
+456801  chr20  64327153  64328489  ...  12858  12865        NaN
+
+[456773 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 18.52691102027893
+HiC Complete
+Completed chromosome: chr20. Elapsed time: 19.079986333847046 
+
+Making predictions for chromosome: chr21
+Making putative predictions table...
+Done. There are 196165 putative enhancers for chromosome chr21
+Elapsed time: 0.11886143684387207
+Begin HiC
+          chr     start       end  ...  binX  binY     counts
+0       chr21   6498595   6499491  ...  1299  2104        NaN
+1       chr21   6565148   6565648  ...  1313  2104        NaN
+2       chr21   7945787   7946575  ...  1589  2104   0.899849
+3       chr21   7947140   7947877  ...  1589  2104   0.899849
+4       chr21   7952094   7953562  ...  1590  2104   1.660723
+...       ...       ...       ...  ...   ...   ...        ...
+196168  chr21  46674568  46675680  ...  9264  9335  17.090515
+196169  chr21  46674568  46675680  ...  9264  9335  17.090515
+196170  chr21  46674568  46675680  ...  9291  9335  16.504845
+196171  chr21  46674568  46675680  ...  9321  9335  31.952538
+196172  chr21  46674568  46675680  ...  9327  9335  30.118622
+
+[196165 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 11.468758583068848
+HiC Complete
+Completed chromosome: chr21. Elapsed time: 11.698941469192505 
+
+Making predictions for chromosome: chr22
+Making putative predictions table...
+Done. There are 537100 putative enhancers for chromosome chr22
+Elapsed time: 0.3068711757659912
+Begin HiC
+          chr     start       end  ...   binX   binY      counts
+0       chr22  10699231  10699731  ...   2139   3105         NaN
+1       chr22  10699231  10699731  ...   2139   3138         NaN
+2       chr22  10716557  10717057  ...   2143   3105         NaN
+3       chr22  10716557  10717057  ...   2143   3138         NaN
+4       chr22  10717115  10717828  ...   2143   3105         NaN
+...       ...       ...       ...  ...    ...    ...         ...
+537136  chr22  50783001  50783909  ...  10120  10156    6.915528
+537137  chr22  50783001  50783909  ...  10125  10156   20.835760
+537138  chr22  50783001  50783909  ...  10134  10156    4.736401
+537139  chr22  50783001  50783909  ...  10147  10156   18.094151
+537140  chr22  50783001  50783909  ...  10156  10156  438.960480
+
+[537100 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 7.892225027084351
+HiC Complete
+Completed chromosome: chr22. Elapsed time: 8.453233480453491 
+
+Making predictions for chromosome: chr3
+Making putative predictions table...
+Done. There are 680559 putative enhancers for chromosome chr3
+Elapsed time: 0.4219050407409668
+Begin HiC
+         chr      start        end  ...   binX   binY    counts
+0       chr3      10037      11221  ...      2    995       NaN
+1       chr3      10037      11221  ...      2    950       NaN
+2       chr3      10037      11221  ...      2    898       NaN
+3       chr3      10037      11221  ...      2    893       NaN
+4       chr3      10037      11221  ...      2    860       NaN
+...      ...        ...        ...  ...    ...    ...       ...
+680598  chr3  198172606  198174083  ...  39549  39634  2.256353
+680599  chr3  198172606  198174083  ...  39558  39634       NaN
+680600  chr3  198172606  198174083  ...  39590  39634  2.433070
+680601  chr3  198172606  198174083  ...  39592  39634  8.630474
+680602  chr3  198172606  198174083  ...  39592  39634  8.630474
+
+[680559 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 85.33149838447571
+HiC Complete
+Completed chromosome: chr3. Elapsed time: 86.28111743927002 
+
+Making predictions for chromosome: chr4
+Making putative predictions table...
+Done. There are 338444 putative enhancers for chromosome chr4
+Elapsed time: 0.20821380615234375
+Begin HiC
+         chr      start        end  ...   binX   binY  counts
+0       chr4       9860      10360  ...      2    971     NaN
+1       chr4       9860      10360  ...      2    968     NaN
+2       chr4       9860      10360  ...      2    908     NaN
+3       chr4       9860      10360  ...      2    877     NaN
+4       chr4       9860      10360  ...      2    858     NaN
+...      ...        ...        ...  ...    ...    ...     ...
+338472  chr4  190203450  190204280  ...  37931  38040     NaN
+338473  chr4  190203450  190204280  ...  37976  38040     NaN
+338474  chr4  190203450  190204280  ...  37988  38040     NaN
+338475  chr4  190203450  190204280  ...  38005  38040     NaN
+338476  chr4  190203450  190204280  ...  38012  38040     NaN
+
+[338444 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 88.71508479118347
+HiC Complete
+Completed chromosome: chr4. Elapsed time: 89.31498742103577 
+
+Making predictions for chromosome: chr5
+Making putative predictions table...
+Done. There are 488705 putative enhancers for chromosome chr5
+Elapsed time: 0.2887074947357178
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr5      20097      20848  ...      4    954        NaN
+1       chr5      20097      20848  ...      4    719        NaN
+2       chr5      20097      20848  ...      4    707        NaN
+3       chr5      20097      20848  ...      4    700        NaN
+4       chr5      20097      20848  ...      4    635        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+488743  chr5  181286290  181287000  ...  36244  36257  13.394236
+488744  chr5  181286290  181287000  ...  36248  36257  24.958849
+488745  chr5  181286290  181287000  ...  36249  36257   7.110622
+488746  chr5  181286290  181287000  ...  36252  36257  32.913670
+488747  chr5  181286290  181287000  ...  36252  36257  32.913670
+
+[488705 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 74.33791303634644
+HiC Complete
+Completed chromosome: chr5. Elapsed time: 74.95346879959106 
+
+Making predictions for chromosome: chr6
+Making putative predictions table...
+Done. There are 743957 putative enhancers for chromosome chr6
+Elapsed time: 0.4332404136657715
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr6     148148     149001  ...     29    955        NaN
+1       chr6     148148     149001  ...     29    922        NaN
+2       chr6     148148     149001  ...     29    827   1.603807
+3       chr6     148148     149001  ...     29    815   1.706069
+4       chr6     148148     149001  ...     29    815   1.706069
+...      ...        ...        ...  ...    ...    ...        ...
+744032  chr6  170612278  170613095  ...  34058  34122   9.781119
+744033  chr6  170612278  170613095  ...  34061  34122  12.059482
+744034  chr6  170612278  170613095  ...  34110  34122  25.092472
+744035  chr6  170612278  170613095  ...  34110  34122  25.092472
+744036  chr6  170612278  170613095  ...  34116  34122  43.421017
+
+[743957 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 72.12860774993896
+HiC Complete
+Completed chromosome: chr6. Elapsed time: 72.91810703277588 
+
+Making predictions for chromosome: chr7
+Making putative predictions table...
+Done. There are 551635 putative enhancers for chromosome chr7
+Elapsed time: 0.33565783500671387
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr7      30769      31710  ...      6    991        NaN
+1       chr7      30769      31710  ...      6    976   3.763112
+2       chr7      30769      31710  ...      6    972        NaN
+3       chr7      30769      31710  ...      6    955        NaN
+4       chr7      30769      31710  ...      6    936        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+551667  chr7  159334792  159336085  ...  31740  31867        NaN
+551668  chr7  159334792  159336085  ...  31765  31867        NaN
+551669  chr7  159334792  159336085  ...  31771  31867   3.937132
+551670  chr7  159334792  159336085  ...  31801  31867   4.464881
+551671  chr7  159334792  159336085  ...  31828  31867  12.898629
+
+[551635 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 60.15823531150818
+HiC Complete
+Completed chromosome: chr7. Elapsed time: 60.93263864517212 
+
+Making predictions for chromosome: chr8
+Making putative predictions table...
+Done. There are 353466 putative enhancers for chromosome chr8
+Elapsed time: 0.2137155532836914
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr8     166774     167274  ...     33    409        NaN
+1       chr8     166774     167274  ...     33    394        NaN
+2       chr8     166774     167274  ...     33    394        NaN
+3       chr8     166774     167274  ...     33    364        NaN
+4       chr8     166774     167274  ...     33    352        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+353486  chr8  145075269  145076182  ...  28965  29015  21.726057
+353487  chr8  145075269  145076182  ...  28970  29015  26.201653
+353488  chr8  145075269  145076182  ...  28980  29015  17.465908
+353489  chr8  145075269  145076182  ...  28990  29015  23.909843
+353490  chr8  145075269  145076182  ...  29010  29015  19.877256
+
+[353466 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 60.595370292663574
+HiC Complete
+Completed chromosome: chr8. Elapsed time: 61.10983490943909 
+
+Making predictions for chromosome: chr9
+Making putative predictions table...
+Done. There are 623803 putative enhancers for chromosome chr9
+Elapsed time: 0.38248276710510254
+Begin HiC
+         chr      start        end  ...   binX   binY     counts
+0       chr9       9851      11659  ...      2    997        NaN
+1       chr9       9851      11659  ...      2    958        NaN
+2       chr9       9851      11659  ...      2    948        NaN
+3       chr9       9851      11659  ...      2    935        NaN
+4       chr9       9851      11659  ...      2    935        NaN
+...      ...        ...        ...  ...    ...    ...        ...
+623851  chr9  138220484  138221161  ...  27518  27644   7.437040
+623852  chr9  138220484  138221161  ...  27521  27644   7.294184
+623853  chr9  138220484  138221161  ...  27523  27644        NaN
+623854  chr9  138220484  138221161  ...  27552  27644  14.064574
+623855  chr9  138220484  138221161  ...  27575  27644  22.940285
+
+[623803 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 38.608217000961304
+HiC Complete
+Completed chromosome: chr9. Elapsed time: 39.30711221694946 
+
+Making predictions for chromosome: chrX
+Making putative predictions table...
+Done. There are 227971 putative enhancers for chromosome chrX
+Elapsed time: 0.1362013816833496
+Begin HiC
+         chr      start        end  ...   binX   binY  counts
+0       chrX     225776     226276  ...     45    742     NaN
+1       chrX     225776     226276  ...     45    669     NaN
+2       chrX     225776     226276  ...     45    654     NaN
+3       chrX     225776     226276  ...     45    613     NaN
+4       chrX     225776     226276  ...     45    601     NaN
+...      ...        ...        ...  ...    ...    ...     ...
+227975  chrX  156029730  156030861  ...  31066  31206     NaN
+227976  chrX  156029730  156030861  ...  31122  31206     NaN
+227977  chrX  156029730  156030861  ...  31153  31206     NaN
+227978  chrX  156029730  156030861  ...  31176  31206     NaN
+227979  chrX  156029730  156030861  ...  31199  31206     NaN
+
+[227971 rows x 28 columns]
+Index(['chr', 'start', 'end', 'name', 'class', 'activity_base',
+       'activity_base_enh', 'activity_base_squared_enh', 'normalized_atac_enh',
+       'enh_midpoint', 'enh_idx', 'TargetGene', 'TargetGeneTSS',
+       'TargetGeneExpression', 'TargetGenePromoterActivityQuantile',
+       'TargetGeneIsExpressed', 'TargetGeneEnsembl_ID', 'normalized_atac_prom',
+       'gene_idx', 'distance', 'isSelfPromoter', 'powerlaw_contact',
+       'powerlaw_contact_reference', 'enh_bin', 'tss_bin', 'binX', 'binY',
+       'counts'],
+      dtype='object')
+HiC added to predictions table. Elapsed time: 37.874425172805786
+HiC Complete
+Completed chromosome: chrX. Elapsed time: 38.24970507621765 
+
+Writing output files...
+Done.
+Done.
+[Tue Mar  4 18:07:37 2025]
+Finished job 0.
+1 of 1 steps (100%) done

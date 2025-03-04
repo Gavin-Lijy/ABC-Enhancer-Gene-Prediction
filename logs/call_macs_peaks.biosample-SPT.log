@@ -1,36 +1,36 @@
-JOB_ID=618440
+JOB_ID=618455
 Building DAG of jobs...
 Using shell: /usr/bin/bash
 Provided cores: 1 (use --cores to define parallelism)
 Rules claiming more threads will be scaled down.
-Provided resources: mem_mb=21073, mem_mib=20097, disk_mb=1317, disk_mib=1256
+Provided resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954
 Conda environments: ignored
 Select jobs to execute...
 
-[Tue Mar  4 15:10:08 2025]
+[Tue Mar  4 18:12:31 2025]
 rule call_macs_peaks:
-    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz
+    input: /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatids.tagAlign.gz
     output: /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model/SPT/Peaks/macs2_peaks.narrowPeak
     jobid: 0
     reason: Forced execution
     wildcards: biosample=SPT
-    resources: mem_mb=21073, mem_mib=20097, disk_mb=1317, disk_mib=1256, tmpdir=/home/jl9324/mnt/scratch/jl9324
+    resources: mem_mb=8000, mem_mib=7630, disk_mb=1000, disk_mib=954, tmpdir=/home/jl9324/mnt/scratch/jl9324
 
 
-		if [[ "/home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz" == *tagAlign* ]]; then
+		if [[ "/home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatids.tagAlign.gz" == *tagAlign* ]]; then
 			FORMAT="BED"
 		else
 			FORMAT="AUTO"
 		fi
 
-		macs2 callpeak 		-f $FORMAT 		-g hs 		-p 0.1 		-n macs2 		--shift -75 		--extsize 150 		--nomodel 		--keep-dup all 		--call-summits 		--outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks 		-t /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz 
+		macs2 callpeak 		-f $FORMAT 		-g hs 		-p 0.1 		-n macs2 		--shift -75 		--extsize 150 		--nomodel 		--keep-dup all 		--call-summits 		--outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks 		-t /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatids.tagAlign.gz 
 		
-INFO  @ Tue, 04 Mar 2025 15:10:08: 
-# Command line: callpeak -f BED -g hs -p 0.1 -n macs2 --shift -75 --extsize 150 --nomodel --keep-dup all --call-summits --outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks -t /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz
+INFO  @ Tue, 04 Mar 2025 18:12:31: 
+# Command line: callpeak -f BED -g hs -p 0.1 -n macs2 --shift -75 --extsize 150 --nomodel --keep-dup all --call-summits --outdir /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks -t /home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatids.tagAlign.gz
 # ARGUMENTS LIST:
 # name = macs2
 # format = BED
-# ChIP-seq file = ['/home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatocytes.tagAlign.gz']
+# ChIP-seq file = ['/home/jl9324/Sperm_3D_Genome_Project/multiome/processed/bigwig/Spermatids.tagAlign.gz']
 # control file = None
 # effective genome size = 2.70e+09
 # band width = 300
@@ -45,163 +45,68 @@ INFO  @ Tue, 04 Mar 2025 15:10:08:
 # Paired-End mode is off
 # Searching for subpeak summits is on
  
-INFO  @ Tue, 04 Mar 2025 15:10:08: #1 read tag files... 
-INFO  @ Tue, 04 Mar 2025 15:10:08: #1 read treatment tags... 
-INFO  @ Tue, 04 Mar 2025 15:10:09:  1000000 
-INFO  @ Tue, 04 Mar 2025 15:10:10:  2000000 
-INFO  @ Tue, 04 Mar 2025 15:10:10:  3000000 
-INFO  @ Tue, 04 Mar 2025 15:10:11:  4000000 
-INFO  @ Tue, 04 Mar 2025 15:10:12:  5000000 
-INFO  @ Tue, 04 Mar 2025 15:10:13:  6000000 
-INFO  @ Tue, 04 Mar 2025 15:10:14:  7000000 
-INFO  @ Tue, 04 Mar 2025 15:10:14:  8000000 
-INFO  @ Tue, 04 Mar 2025 15:10:15:  9000000 
-INFO  @ Tue, 04 Mar 2025 15:10:16:  10000000 
-INFO  @ Tue, 04 Mar 2025 15:10:17:  11000000 
-INFO  @ Tue, 04 Mar 2025 15:10:17:  12000000 
-INFO  @ Tue, 04 Mar 2025 15:10:18:  13000000 
-INFO  @ Tue, 04 Mar 2025 15:10:19:  14000000 
-INFO  @ Tue, 04 Mar 2025 15:10:20:  15000000 
-INFO  @ Tue, 04 Mar 2025 15:10:20:  16000000 
-INFO  @ Tue, 04 Mar 2025 15:10:21:  17000000 
-INFO  @ Tue, 04 Mar 2025 15:10:22:  18000000 
-INFO  @ Tue, 04 Mar 2025 15:10:23:  19000000 
-INFO  @ Tue, 04 Mar 2025 15:10:24:  20000000 
-INFO  @ Tue, 04 Mar 2025 15:10:24:  21000000 
-INFO  @ Tue, 04 Mar 2025 15:10:25:  22000000 
-INFO  @ Tue, 04 Mar 2025 15:10:26:  23000000 
-INFO  @ Tue, 04 Mar 2025 15:10:27:  24000000 
-INFO  @ Tue, 04 Mar 2025 15:10:27:  25000000 
-INFO  @ Tue, 04 Mar 2025 15:10:28:  26000000 
-INFO  @ Tue, 04 Mar 2025 15:10:29:  27000000 
-INFO  @ Tue, 04 Mar 2025 15:10:30:  28000000 
-INFO  @ Tue, 04 Mar 2025 15:10:31:  29000000 
-INFO  @ Tue, 04 Mar 2025 15:10:31:  30000000 
-INFO  @ Tue, 04 Mar 2025 15:10:32:  31000000 
-INFO  @ Tue, 04 Mar 2025 15:10:33:  32000000 
-INFO  @ Tue, 04 Mar 2025 15:10:34:  33000000 
-INFO  @ Tue, 04 Mar 2025 15:10:34:  34000000 
-INFO  @ Tue, 04 Mar 2025 15:10:35:  35000000 
-INFO  @ Tue, 04 Mar 2025 15:10:36:  36000000 
-INFO  @ Tue, 04 Mar 2025 15:10:37:  37000000 
-INFO  @ Tue, 04 Mar 2025 15:10:38:  38000000 
-INFO  @ Tue, 04 Mar 2025 15:10:38:  39000000 
-INFO  @ Tue, 04 Mar 2025 15:10:39:  40000000 
-INFO  @ Tue, 04 Mar 2025 15:10:40:  41000000 
-INFO  @ Tue, 04 Mar 2025 15:10:41:  42000000 
-INFO  @ Tue, 04 Mar 2025 15:10:42:  43000000 
-INFO  @ Tue, 04 Mar 2025 15:10:42:  44000000 
-INFO  @ Tue, 04 Mar 2025 15:10:43:  45000000 
-INFO  @ Tue, 04 Mar 2025 15:10:44:  46000000 
-INFO  @ Tue, 04 Mar 2025 15:10:45:  47000000 
-INFO  @ Tue, 04 Mar 2025 15:10:46:  48000000 
-INFO  @ Tue, 04 Mar 2025 15:10:47:  49000000 
-INFO  @ Tue, 04 Mar 2025 15:10:47:  50000000 
-INFO  @ Tue, 04 Mar 2025 15:10:48:  51000000 
-INFO  @ Tue, 04 Mar 2025 15:10:49:  52000000 
-INFO  @ Tue, 04 Mar 2025 15:10:50:  53000000 
-INFO  @ Tue, 04 Mar 2025 15:10:51:  54000000 
-INFO  @ Tue, 04 Mar 2025 15:10:51:  55000000 
-INFO  @ Tue, 04 Mar 2025 15:10:52:  56000000 
-INFO  @ Tue, 04 Mar 2025 15:10:53:  57000000 
-INFO  @ Tue, 04 Mar 2025 15:10:54:  58000000 
-INFO  @ Tue, 04 Mar 2025 15:10:55:  59000000 
-INFO  @ Tue, 04 Mar 2025 15:10:55:  60000000 
-INFO  @ Tue, 04 Mar 2025 15:10:56:  61000000 
-INFO  @ Tue, 04 Mar 2025 15:10:57:  62000000 
-INFO  @ Tue, 04 Mar 2025 15:10:58:  63000000 
-INFO  @ Tue, 04 Mar 2025 15:10:58:  64000000 
-INFO  @ Tue, 04 Mar 2025 15:10:59:  65000000 
-INFO  @ Tue, 04 Mar 2025 15:11:00:  66000000 
-INFO  @ Tue, 04 Mar 2025 15:11:01:  67000000 
-INFO  @ Tue, 04 Mar 2025 15:11:02:  68000000 
-INFO  @ Tue, 04 Mar 2025 15:11:02:  69000000 
-INFO  @ Tue, 04 Mar 2025 15:11:03:  70000000 
-INFO  @ Tue, 04 Mar 2025 15:11:04:  71000000 
-INFO  @ Tue, 04 Mar 2025 15:11:05:  72000000 
-INFO  @ Tue, 04 Mar 2025 15:11:05:  73000000 
-INFO  @ Tue, 04 Mar 2025 15:11:06:  74000000 
-INFO  @ Tue, 04 Mar 2025 15:11:07:  75000000 
-INFO  @ Tue, 04 Mar 2025 15:11:08:  76000000 
-INFO  @ Tue, 04 Mar 2025 15:11:08:  77000000 
-INFO  @ Tue, 04 Mar 2025 15:11:09:  78000000 
-INFO  @ Tue, 04 Mar 2025 15:11:10:  79000000 
-INFO  @ Tue, 04 Mar 2025 15:11:11:  80000000 
-INFO  @ Tue, 04 Mar 2025 15:11:12:  81000000 
-INFO  @ Tue, 04 Mar 2025 15:11:12:  82000000 
-INFO  @ Tue, 04 Mar 2025 15:11:13:  83000000 
-INFO  @ Tue, 04 Mar 2025 15:11:14:  84000000 
-INFO  @ Tue, 04 Mar 2025 15:11:15:  85000000 
-INFO  @ Tue, 04 Mar 2025 15:11:15:  86000000 
-INFO  @ Tue, 04 Mar 2025 15:11:16:  87000000 
-INFO  @ Tue, 04 Mar 2025 15:11:17:  88000000 
-INFO  @ Tue, 04 Mar 2025 15:11:18:  89000000 
-INFO  @ Tue, 04 Mar 2025 15:11:18:  90000000 
-INFO  @ Tue, 04 Mar 2025 15:11:19:  91000000 
-INFO  @ Tue, 04 Mar 2025 15:11:20:  92000000 
-INFO  @ Tue, 04 Mar 2025 15:11:21:  93000000 
-INFO  @ Tue, 04 Mar 2025 15:11:22:  94000000 
-INFO  @ Tue, 04 Mar 2025 15:11:22:  95000000 
-INFO  @ Tue, 04 Mar 2025 15:11:23:  96000000 
-INFO  @ Tue, 04 Mar 2025 15:11:24:  97000000 
-INFO  @ Tue, 04 Mar 2025 15:11:25:  98000000 
-INFO  @ Tue, 04 Mar 2025 15:11:25:  99000000 
-INFO  @ Tue, 04 Mar 2025 15:11:26:  100000000 
-INFO  @ Tue, 04 Mar 2025 15:11:27:  101000000 
-INFO  @ Tue, 04 Mar 2025 15:11:28:  102000000 
-INFO  @ Tue, 04 Mar 2025 15:11:29:  103000000 
-INFO  @ Tue, 04 Mar 2025 15:11:29:  104000000 
-INFO  @ Tue, 04 Mar 2025 15:11:30:  105000000 
-INFO  @ Tue, 04 Mar 2025 15:11:31:  106000000 
-INFO  @ Tue, 04 Mar 2025 15:11:32:  107000000 
-INFO  @ Tue, 04 Mar 2025 15:11:32:  108000000 
-INFO  @ Tue, 04 Mar 2025 15:11:33:  109000000 
-INFO  @ Tue, 04 Mar 2025 15:11:34:  110000000 
-INFO  @ Tue, 04 Mar 2025 15:11:35:  111000000 
-INFO  @ Tue, 04 Mar 2025 15:11:35:  112000000 
-INFO  @ Tue, 04 Mar 2025 15:11:36:  113000000 
-INFO  @ Tue, 04 Mar 2025 15:11:37:  114000000 
-INFO  @ Tue, 04 Mar 2025 15:11:38:  115000000 
-INFO  @ Tue, 04 Mar 2025 15:11:39:  116000000 
-INFO  @ Tue, 04 Mar 2025 15:11:39:  117000000 
-INFO  @ Tue, 04 Mar 2025 15:11:40:  118000000 
-INFO  @ Tue, 04 Mar 2025 15:11:41:  119000000 
-INFO  @ Tue, 04 Mar 2025 15:11:42:  120000000 
-INFO  @ Tue, 04 Mar 2025 15:11:42:  121000000 
-INFO  @ Tue, 04 Mar 2025 15:11:43:  122000000 
-INFO  @ Tue, 04 Mar 2025 15:11:44:  123000000 
-INFO  @ Tue, 04 Mar 2025 15:11:45:  124000000 
-INFO  @ Tue, 04 Mar 2025 15:11:45:  125000000 
-INFO  @ Tue, 04 Mar 2025 15:11:46:  126000000 
-INFO  @ Tue, 04 Mar 2025 15:11:47:  127000000 
-INFO  @ Tue, 04 Mar 2025 15:11:48:  128000000 
-INFO  @ Tue, 04 Mar 2025 15:11:49:  129000000 
-INFO  @ Tue, 04 Mar 2025 15:11:49:  130000000 
-INFO  @ Tue, 04 Mar 2025 15:11:50:  131000000 
-INFO  @ Tue, 04 Mar 2025 15:11:51:  132000000 
-INFO  @ Tue, 04 Mar 2025 15:11:52:  133000000 
-INFO  @ Tue, 04 Mar 2025 15:11:52:  134000000 
-INFO  @ Tue, 04 Mar 2025 15:11:53:  135000000 
-INFO  @ Tue, 04 Mar 2025 15:11:54:  136000000 
-INFO  @ Tue, 04 Mar 2025 15:11:55:  137000000 
-INFO  @ Tue, 04 Mar 2025 15:11:56:  138000000 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #1 tag size is determined as 87 bps 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #1 tag size = 87.0 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #1  total tags in treatment: 138354244 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #1 finished! 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #2 Build Peak Model... 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #2 Skipped... 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #2 Use 150 as fragment length 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #2 Sequencing ends will be shifted towards 5' by 75 bp(s) 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #3 Call peaks... 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #3 Going to call summits inside each peak ... 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #3 Call peaks with given -log10pvalue cutoff: 1.00000 ... 
-INFO  @ Tue, 04 Mar 2025 15:11:57: #3 Pre-compute pvalue-qvalue table... 
-INFO  @ Tue, 04 Mar 2025 15:15:18: #3 Call peaks for each chromosome... 
-INFO  @ Tue, 04 Mar 2025 15:18:36: #4 Write output xls file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_peaks.xls 
-INFO  @ Tue, 04 Mar 2025 15:18:38: #4 Write peak in narrowPeak format file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_peaks.narrowPeak 
-INFO  @ Tue, 04 Mar 2025 15:18:40: #4 Write summits bed file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_summits.bed 
-INFO  @ Tue, 04 Mar 2025 15:18:40: Done! 
-[Tue Mar  4 15:18:41 2025]
+INFO  @ Tue, 04 Mar 2025 18:12:31: #1 read tag files... 
+INFO  @ Tue, 04 Mar 2025 18:12:31: #1 read treatment tags... 
+INFO  @ Tue, 04 Mar 2025 18:12:32:  1000000 
+INFO  @ Tue, 04 Mar 2025 18:12:33:  2000000 
+INFO  @ Tue, 04 Mar 2025 18:12:33:  3000000 
+INFO  @ Tue, 04 Mar 2025 18:12:34:  4000000 
+INFO  @ Tue, 04 Mar 2025 18:12:35:  5000000 
+INFO  @ Tue, 04 Mar 2025 18:12:36:  6000000 
+INFO  @ Tue, 04 Mar 2025 18:12:36:  7000000 
+INFO  @ Tue, 04 Mar 2025 18:12:37:  8000000 
+INFO  @ Tue, 04 Mar 2025 18:12:38:  9000000 
+INFO  @ Tue, 04 Mar 2025 18:12:39:  10000000 
+INFO  @ Tue, 04 Mar 2025 18:12:40:  11000000 
+INFO  @ Tue, 04 Mar 2025 18:12:40:  12000000 
+INFO  @ Tue, 04 Mar 2025 18:12:41:  13000000 
+INFO  @ Tue, 04 Mar 2025 18:12:42:  14000000 
+INFO  @ Tue, 04 Mar 2025 18:12:43:  15000000 
+INFO  @ Tue, 04 Mar 2025 18:12:44:  16000000 
+INFO  @ Tue, 04 Mar 2025 18:12:44:  17000000 
+INFO  @ Tue, 04 Mar 2025 18:12:45:  18000000 
+INFO  @ Tue, 04 Mar 2025 18:12:46:  19000000 
+INFO  @ Tue, 04 Mar 2025 18:12:47:  20000000 
+INFO  @ Tue, 04 Mar 2025 18:12:47:  21000000 
+INFO  @ Tue, 04 Mar 2025 18:12:48:  22000000 
+INFO  @ Tue, 04 Mar 2025 18:12:49:  23000000 
+INFO  @ Tue, 04 Mar 2025 18:12:50:  24000000 
+INFO  @ Tue, 04 Mar 2025 18:12:50:  25000000 
+INFO  @ Tue, 04 Mar 2025 18:12:51:  26000000 
+INFO  @ Tue, 04 Mar 2025 18:12:52:  27000000 
+INFO  @ Tue, 04 Mar 2025 18:12:53:  28000000 
+INFO  @ Tue, 04 Mar 2025 18:12:54:  29000000 
+INFO  @ Tue, 04 Mar 2025 18:12:54:  30000000 
+INFO  @ Tue, 04 Mar 2025 18:12:55:  31000000 
+INFO  @ Tue, 04 Mar 2025 18:12:56:  32000000 
+INFO  @ Tue, 04 Mar 2025 18:12:57:  33000000 
+INFO  @ Tue, 04 Mar 2025 18:12:57:  34000000 
+INFO  @ Tue, 04 Mar 2025 18:12:58:  35000000 
+INFO  @ Tue, 04 Mar 2025 18:12:59:  36000000 
+INFO  @ Tue, 04 Mar 2025 18:13:00:  37000000 
+INFO  @ Tue, 04 Mar 2025 18:13:01:  38000000 
+INFO  @ Tue, 04 Mar 2025 18:13:01:  39000000 
+INFO  @ Tue, 04 Mar 2025 18:13:02:  40000000 
+INFO  @ Tue, 04 Mar 2025 18:13:03:  41000000 
+INFO  @ Tue, 04 Mar 2025 18:13:04:  42000000 
+INFO  @ Tue, 04 Mar 2025 18:13:04:  43000000 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #1 tag size is determined as 51 bps 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #1 tag size = 51.0 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #1  total tags in treatment: 43272748 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #1 finished! 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #2 Build Peak Model... 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #2 Skipped... 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #2 Use 150 as fragment length 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #2 Sequencing ends will be shifted towards 5' by 75 bp(s) 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #3 Call peaks... 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #3 Going to call summits inside each peak ... 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #3 Call peaks with given -log10pvalue cutoff: 1.00000 ... 
+INFO  @ Tue, 04 Mar 2025 18:13:05: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Tue, 04 Mar 2025 18:14:04: #3 Call peaks for each chromosome... 
+INFO  @ Tue, 04 Mar 2025 18:17:13: #4 Write output xls file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_peaks.xls 
+INFO  @ Tue, 04 Mar 2025 18:17:16: #4 Write peak in narrowPeak format file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_peaks.narrowPeak 
+INFO  @ Tue, 04 Mar 2025 18:17:18: #4 Write summits bed file... /home/jl9324/Sperm_3D_Genome_Project/multiome/ABC_model//SPT/Peaks/macs2_summits.bed 
+INFO  @ Tue, 04 Mar 2025 18:17:19: Done! 
+[Tue Mar  4 18:17:19 2025]
 Finished job 0.
 1 of 1 steps (100%) done
